@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v1.0.0...v1.1.0) (2021-07-28)
+
+
+### Documentation
+
+* fix typo in package name ([ce08a42](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/ce08a429bf4b3dd9e20e8e6e0d729dbd4e0959b8))
+
 ## 1.0.0 (2021-07-28)
 
 

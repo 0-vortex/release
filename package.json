@@ -1,6 +1,6 @@
 {
   "name": "demo-test-artifact-2",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "files": [
     "release.config.js"
