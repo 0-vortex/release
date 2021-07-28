@@ -1,0 +1,40 @@
+{
+  "name": "demo-test-artifact-2",
+  "version": "0.0.0-development",
+  "license": "MIT",
+  "files": [
+    "release.config.js"
+  ],
+  "main": "release.config.js",
+  "author": "TED Vortex <ted.vortex@gmail.com>",
+  "engines": {
+    "node": ">=12",
+    "npm": ">=7"
+  },
+  "bugs": "https://github.com/0-vortex/open-sauced-semantic-config-test/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/0-vortex/open-sauced-semantic-config-test.git"
+  },
+  "peerDependencies": {
+    "semantic-release": ">=16.0.0 <18.0.0"
+  },
+  "dependencies": {
+    "@eclass/semantic-release-docker": "^1.0.7",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.2.3",
+    "@semantic-release/release-notes-generator": "^9.0.3",
+    "conventional-changelog-conventionalcommits": "^4.6.0"
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "semantic-release": "^17.4.4"
+  },
+  "scripts": {
+    "push": "cz",
+    "semantic-release": "semantic-release"
+  }
+}
