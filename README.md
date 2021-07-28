@@ -1,4 +1,4 @@
-# @semantic-release/apm-config
+# demo-test-artifact-2
 
 [**semantic-release**](https://github.com/semantic-release/semantic-release) shareable config to publish to `npm` and/or `ghcr`.
 
