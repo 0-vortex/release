@@ -1,6 +1,6 @@
 {
-  "name": "demo-test-artifact-2",
-  "version": "1.1.0",
+  "name": "open-sauced-semantic-config-test",
+  "version": "1.4.0",
   "license": "MIT",
   "files": [
     "release.config.js"
@@ -8,7 +8,7 @@
   "main": "release.config.js",
   "author": "TED Vortex <ted.vortex@gmail.com>",
   "engines": {
-    "node": ">=12",
+    "node": ">=14",
     "npm": ">=7"
   },
   "bugs": "https://github.com/0-vortex/open-sauced-semantic-config-test/issues",
@@ -17,24 +17,30 @@
     "url": "git+ssh://git@github.com/0-vortex/open-sauced-semantic-config-test.git"
   },
   "peerDependencies": {
-    "semantic-release": ">=16.0.0 <18.0.0"
+    "semantic-release": "^18.0.0"
   },
   "dependencies": {
-    "@eclass/semantic-release-docker": "^1.0.7",
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/commit-analyzer": "^8.0.1",
-    "@semantic-release/git": "^9.0.0",
-    "@semantic-release/github": "^7.2.3",
-    "@semantic-release/release-notes-generator": "^9.0.3",
-    "conventional-changelog-conventionalcommits": "^4.6.0"
+    "@eclass/semantic-release-docker": "github:0-vortex/semantic-release-docker#next",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/commit-analyzer": "^9.0.1",
+    "@semantic-release/git": "^10.0.0",
+    "@semantic-release/github": "^8.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.2",
+    "conventional-changelog-conventionalcommits": "^4.6.1"
   },
   "devDependencies": {
+    "@open-sauced/check-engines": "^1.0.0",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
-    "semantic-release": "^17.4.4"
+    "semantic-release": "^18.0.0"
   },
   "scripts": {
-    "push": "cz",
-    "semantic-release": "semantic-release"
+    "preinstall": "npx @open-sauced/check-engines",
+    "prestart": "npx @open-sauced/check-engines",
+    "push": "npx cz",
+    "semantic-release": "npx semantic-release"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

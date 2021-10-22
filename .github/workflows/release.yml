@@ -4,12 +4,13 @@ on:
   push:
     branches:
       - main
+      - beta
 
 jobs:
   release:
     environment:
       name: npm
-      url: https://www.npmjs.com/package/demo-test-artifact-2/v/${{ steps.release.outputs.version }}
+      url: https://www.npmjs.com/package/${{ github.repository }}/v/${{ steps.release.outputs.version }}
     name: Semantic release
     runs-on: ubuntu-latest
     steps:
@@ -21,7 +22,7 @@ jobs:
       - name: "🔧 setup node"
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: 12
+          node-version: 14
 
       - name: "🔧 setup cache"
         uses: actions/cache@v2
@@ -48,5 +49,5 @@ jobs:
           GIT_COMMITTER_NAME: ${{ secrets.GIT_COMMITTER_NAME }}
           GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
         run: |
-          npx semantic-release
+          npm run semantic-release
           echo "::set-output name=version::$(cat package.json | jq -r '.version')"
