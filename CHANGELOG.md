@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v1.1.0...v1.2.0) (2021-10-22)
+
+
+### Features
+
+* add beta pre-release attempt ([9ad3cac](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/9ad3cac928887692d7265a5dffa5e1200627054f))
+
 ## [1.1.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v1.0.0...v1.1.0) (2021-07-28)
 
 
