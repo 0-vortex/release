@@ -4,6 +4,7 @@
 # open-sauced-semantic-config-test
 
 > [**semantic-release**](https://github.com/semantic-release/semantic-release) shareable config to publish to `npm` and/or `ghcr`.
+> now with alphas and betas
 
 [![Commits](https://img.shields.io/github/commit-activity/w/open-sauced/semantic-release-conventional-config?style=flat)](https://github.com/open-sauced/semantic-release-conventional-config/pulse)
 [![Issues](https://img.shields.io/github/issues/open-sauced/semantic-release-conventional-config.svg?style=flat)](https://github.com/open-sauced/semantic-release-conventional-config/issues)
