@@ -1,3 +1,10 @@
+## [2.1.0-alpha.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v2.0.0...v2.1.0-alpha.1) (2021-10-23)
+
+
+### Documentation
+
+* make npm repository link clickable ([#4](https://github.com/0-vortex/open-sauced-semantic-config-test/issues/4)) ([7a2afc5](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/7a2afc54b70e5473f5413f600f0b9e2d26c00fd1))
+
 ## [2.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v1.2.0...v2.0.0) (2021-10-23)
 
 
