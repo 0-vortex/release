@@ -11,7 +11,7 @@ jobs:
   release:
     environment:
       name: npm
-      url: https://www.npmjs.com/package/${{ github.repository }}/v/${{ steps.release.outputs.version }}
+      url: https://www.npmjs.com/package/open-sauced-semantic-config-test/v/${{ steps.release.outputs.version }}
     name: Semantic release
     runs-on: ubuntu-latest
     steps:
