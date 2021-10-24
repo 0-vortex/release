@@ -1,3 +1,10 @@
+## [3.0.0-alpha.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.0.0-alpha.2...v3.0.0-alpha.3) (2021-10-24)
+
+
+### Continuous Integration
+
+* remove ci merge release possibility ([#10](https://github.com/0-vortex/open-sauced-semantic-config-test/issues/10)) ([a722df1](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/a722df1beb190b648b46b5f8245a8bb014ec28ee))
+
 ## [3.0.0-alpha.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.0.0-alpha.1...v3.0.0-alpha.2) (2021-10-24)
 
 
