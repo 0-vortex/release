@@ -70,8 +70,6 @@ const plugins = [
   }
 ]);
 
-
-
 module.exports = {
   "branches": [
     "main",
