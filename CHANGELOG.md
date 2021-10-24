@@ -1,3 +1,14 @@
+## [2.1.0-alpha.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v2.1.0-alpha.1...v2.1.0-alpha.2) (2021-10-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove duped dependencies from lock file
+
+### Build System
+
+* remove duped dependencies ([#7](https://github.com/0-vortex/open-sauced-semantic-config-test/issues/7)) ([4145f87](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/4145f87c506c3f3f401e8ed65f0d24eb209c2df1))
+
 ## [2.1.0-alpha.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v2.0.0...v2.1.0-alpha.1) (2021-10-23)
 
 
