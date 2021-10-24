@@ -1,3 +1,10 @@
+## [3.0.0-alpha.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.0.0-alpha.1...v3.0.0-alpha.2) (2021-10-24)
+
+
+### Bug Fixes
+
+* correct linting errors ([3ebbaab](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/3ebbaab9b470c58c35a7610ae556d25db6f27f8d))
+
 ## [3.0.0-alpha.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v2.1.0-alpha.2...v3.0.0-alpha.1) (2021-10-24)
 
 
