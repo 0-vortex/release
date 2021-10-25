@@ -50,7 +50,7 @@ const plugins = [
       "npm-shrinkwrap.json",
       "public/diagram.svg"
     ],
-    "message": `chore(release): \${nextRelease.version}\n\n\${nextRelease.notes}`
+    "message": `chore(release): \${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}`
   }],
   ["@semantic-release/github", {
     "assets": [
@@ -63,17 +63,10 @@ const plugins = [
 ];
 
 !process.env.DISABLE_DOCKER && plugins.push([
-  "@eclass/semantic-release-docker",
+  "@semantic-release-plus/docker",
   {
-    "baseImageName": `${process.env.GITHUB_REPOSITORY}`,
-    "registries": [
-      {
-        "url": "ghcr.io",
-        "imageName": `ghcr.io/${process.env.GITHUB_REPOSITORY}`,
-        "user": "REPO_OWNER",
-        "password": "GITHUB_TOKEN"
-      }
-    ]
+    "name": `ghcr.io/${process.env.GITHUB_REPOSITORY}`,
+    "registry": "ghcr.io",
   }
 ]);
 
