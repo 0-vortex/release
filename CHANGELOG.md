@@ -1,3 +1,30 @@
+## [3.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v2.1.0...v3.0.0) (2021-10-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove duped dependencies from lockfile
+* remove duped dependencies from lock file
+
+### Features
+
+* switch docker build plugin ([#8](https://github.com/0-vortex/open-sauced-semantic-config-test/issues/8)) ([7c6787b](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/7c6787bc31680e9c26d587d658eb47419a8ef0a0))
+
+
+### Bug Fixes
+
+* correct linting errors ([3ebbaab](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/3ebbaab9b470c58c35a7610ae556d25db6f27f8d))
+
+
+### Build System
+
+* remove duped dependencies ([#7](https://github.com/0-vortex/open-sauced-semantic-config-test/issues/7)) ([4145f87](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/4145f87c506c3f3f401e8ed65f0d24eb209c2df1))
+
+
+### Continuous Integration
+
+* remove ci merge release possibility ([#10](https://github.com/0-vortex/open-sauced-semantic-config-test/issues/10)) ([a722df1](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/a722df1beb190b648b46b5f8245a8bb014ec28ee))
+
 ## [2.1.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v2.0.0...v2.1.0) (2021-10-23)
 
 
