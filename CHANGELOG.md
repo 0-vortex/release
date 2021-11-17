@@ -1,3 +1,10 @@
+## [3.1.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.0.4...v3.1.0) (2021-11-17)
+
+
+### Features
+
+* enable dry run mode ([e4966c6](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/e4966c6e6bd5678921772f430674996e131255d5))
+
 ### [3.0.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.0.3...v3.0.4) (2021-11-17)
 
 
