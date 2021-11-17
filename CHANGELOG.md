@@ -1,3 +1,10 @@
+### [3.0.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.0.2...v3.0.3) (2021-11-17)
+
+
+### Bug Fixes
+
+* rookie shebang mistake ([3b7aca1](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/3b7aca125c69e00a2209454abbd34bd511dae417))
+
 ### [3.0.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.0.1...v3.0.2) (2021-11-17)
 
 
