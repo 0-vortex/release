@@ -1,3 +1,5 @@
+#! /bin/sh
+
 semantic-release -d | tee semantic-release-output.txt
 
 version=$(cat semantic-release-output.txt | grep "The next release version is" | rev | cut -d' ' -f1 | rev)
