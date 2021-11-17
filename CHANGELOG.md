@@ -1,3 +1,10 @@
+### [3.0.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.0.0...v3.0.1) (2021-11-17)
+
+
+### Tests
+
+* implement github action ([eafcb06](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/eafcb06f2f68b471cb54d5d6c3e79ed5e8aedce5))
+
 ## [3.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v2.1.0...v3.0.0) (2021-10-25)
 
 
