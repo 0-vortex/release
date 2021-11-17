@@ -23,13 +23,13 @@
     "@semantic-release-plus/docker": "^3.0.1",
     "@semantic-release/changelog": "^6.0.0",
     "@semantic-release/git": "^10.0.0",
-    "conventional-changelog-conventionalcommits": "^4.6.1"
+    "conventional-changelog-conventionalcommits": "^4.6.1",
+    "semantic-release": "^18.0.0"
   },
   "devDependencies": {
     "@open-sauced/check-engines": "^1.0.0",
     "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0",
-    "semantic-release": "^18.0.0"
+    "cz-conventional-changelog": "^3.3.0"
   },
   "scripts": {
     "preinstall": "npx @open-sauced/check-engines",
