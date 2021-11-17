@@ -20,7 +20,7 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  entrypoint: 'main.sh'
+  entrypoint: '/main.sh'
   env:
     GITHUB_TOKEN: ${{ inputs.github-token }}
     DRY_RUN: ${{ inputs.dry-run }}
