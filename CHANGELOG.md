@@ -1,3 +1,10 @@
+### [3.0.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.0.1...v3.0.2) (2021-11-17)
+
+
+### Bug Fixes
+
+* correct entrypoint in action.yml ([ee09c09](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/ee09c09a3fc7878630a838c1e11602b6c954ac19))
+
 ### [3.0.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.0.0...v3.0.1) (2021-11-17)
 
 
