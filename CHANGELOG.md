@@ -1,3 +1,10 @@
+### [3.0.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.0.3...v3.0.4) (2021-11-17)
+
+
+### Bug Fixes
+
+* correct incomplete if statement ([5588ce7](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/5588ce76a23fd3a72e8dd0c80f2334bac77cb0ea))
+
 ### [3.0.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.0.2...v3.0.3) (2021-11-17)
 
 
