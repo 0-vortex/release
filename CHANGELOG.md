@@ -1,3 +1,10 @@
+## [3.2.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.1.0...v3.2.0) (2021-11-18)
+
+
+### Features
+
+* load global configuration file independently ([ba9338f](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/ba9338f0a6042f6cf2e0596aa564689597877138))
+
 ## [3.1.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.0.4...v3.1.0) (2021-11-17)
 
 
