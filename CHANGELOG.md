@@ -1,3 +1,10 @@
+### [3.2.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.2.0...v3.2.1) (2021-11-18)
+
+
+### Bug Fixes
+
+* ignore check-engines script on docker build ([463e68b](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/463e68ba89ee955c9028994928d95815be70b142))
+
 ## [3.2.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.1.0...v3.2.0) (2021-11-18)
 
 
