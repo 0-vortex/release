@@ -1,3 +1,10 @@
+## [3.3.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.2.1...v3.3.0) (2021-11-19)
+
+
+### Features
+
+* use exec plugin and improve action entrypoint ([eba7f0f](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/eba7f0f6cd62aec96afec716dedae1dfea7bfc33))
+
 ### [3.2.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.2.0...v3.2.1) (2021-11-18)
 
 
