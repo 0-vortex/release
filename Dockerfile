@@ -11,6 +11,6 @@ RUN apk add --update make \
   && rm -rf /var/cache/apk/* \
   && rm -rf /package.json
 
-COPY *.sh /
+ENTRYPOINT ["npx"]
 
-RUN chmod +x /main.sh
+CMD ["semantic-release"]

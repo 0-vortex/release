@@ -8,19 +8,11 @@ inputs:
     description: 'Github token for pushing releases'
     required: true
     default: ''
-  dry-run:
-    description: 'Skip publishing'
-    required: false
-    default: 'false'
 outputs:
-  released-version:
-    description: 'The version that was released (empty if no release occured)'
-  released-version-number:
-    description: 'The version number (without a leading v) that was released (empty if no release occured)'
+  SEMVER_VERSION:
+    description: 'The version that was released on success'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  entrypoint: '/main.sh'
   env:
     GITHUB_TOKEN: ${{ inputs.github-token }}
-    DRY_RUN: ${{ inputs.dry-run }}
