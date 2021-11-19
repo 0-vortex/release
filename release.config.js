@@ -73,7 +73,7 @@ const plugins = [
 plugins.push([
   "@semantic-release/exec",
   {
-    "successCmd": "echo '::set-env name=SEMVER_VERSION::${nextRelease.version}'"
+    "successCmd": "echo 'SEMVER_VERSION=${nextRelease.version}' >> $GITHUB_ENV"
   }
 ]);
 
