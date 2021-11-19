@@ -1,3 +1,10 @@
+### [3.3.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.3.0...v3.3.1) (2021-11-19)
+
+
+### Bug Fixes
+
+* get proper version out of exec command ([80b90e4](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/80b90e4ce6adac1470bc5ef2277d56cdad91cc16))
+
 ## [3.3.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.2.1...v3.3.0) (2021-11-19)
 
 
