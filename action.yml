@@ -1,18 +1,12 @@
 name: 'open-sauced-semantic-config-test'
 description: 'Run @open-sauced/semantic-release-conventional-config on a repo'
+author: 0-vortex
 branding:
   icon: 'package'
   color: 'yellow'
-inputs:
-  github-token:
-    description: 'Github token for pushing releases'
-    required: true
-    default: ''
 outputs:
   SEMVER_VERSION:
     description: 'The version that was released on success'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  env:
-    GITHUB_TOKEN: ${{ inputs.github-token }}
