@@ -1,3 +1,10 @@
+### [3.4.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.0...v3.4.1) (2021-11-19)
+
+
+### Bug Fixes
+
+* add docker build workflow te release ([d2804b8](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/d2804b83b715258e23b5337d76c440576a5dd034))
+
 ## [3.4.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.3.1...v3.4.0) (2021-11-19)
 
 
