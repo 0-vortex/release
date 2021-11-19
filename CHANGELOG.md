@@ -1,3 +1,10 @@
+## [3.4.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.3.1...v3.4.0) (2021-11-19)
+
+
+### Build System
+
+* deploy to ghcr ([ff92aaf](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/ff92aaf214d10318620a95a4035591c5271d9803))
+
 ### [3.3.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.3.0...v3.3.1) (2021-11-19)
 
 
