@@ -1,3 +1,10 @@
+### [3.4.5](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.4...v3.4.5) (2021-11-20)
+
+
+### Continuous Integration
+
+* test tag on release ([ef1310e](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/ef1310e6547af75d79a62aaf341192bf69ed7a42))
+
 ### [3.4.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.3...v3.4.4) (2021-11-20)
 
 
