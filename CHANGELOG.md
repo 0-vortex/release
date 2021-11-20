@@ -1,3 +1,10 @@
+### [3.5.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.5.0...v3.5.1) (2021-11-20)
+
+
+### Tests
+
+* use custom config out of the box ([8dea2c5](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/8dea2c5536f1535e16ab54fb3da85db9d1d4657b))
+
 ## [3.5.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.9...v3.5.0) (2021-11-20)
 
 
