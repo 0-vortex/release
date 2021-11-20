@@ -1,3 +1,10 @@
+### [3.4.7](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.6...v3.4.7) (2021-11-20)
+
+
+### Continuous Integration
+
+* test elevated access tokens ([5d6700c](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/5d6700c9d8412a831c7bdebf78e38e75bbe728df))
+
 ### [3.4.6](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.5...v3.4.6) (2021-11-20)
 
 
