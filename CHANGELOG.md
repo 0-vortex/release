@@ -1,3 +1,10 @@
+### [3.4.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.1...v3.4.2) (2021-11-20)
+
+
+### Bug Fixes
+
+* adjust configuration to open sauced official release ([4a3605f](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/4a3605f9c10588231b0ba4b6ad45418d5766d7ee))
+
 ### [3.4.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.0...v3.4.1) (2021-11-19)
 
 
