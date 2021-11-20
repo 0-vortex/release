@@ -65,7 +65,7 @@ const plugins = [
 !process.env.DISABLE_DOCKER && plugins.push([
   "@semantic-release-plus/docker",
   {
-    "name": `ghcr.io/${process.env.GITHUB_REPOSITORY}`,
+    "name": String(process.env.GITHUB_REPOSITORY).toLowerCase(),
     "registry": "ghcr.io",
   }
 ]);
