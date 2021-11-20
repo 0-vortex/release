@@ -1,3 +1,10 @@
+### [3.4.8](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.7...v3.4.8) (2021-11-20)
+
+
+### Tests
+
+* try better action tagging ([16df027](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/16df027b283530c88a5577dcad58010c21f941c6))
+
 ### [3.4.7](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.6...v3.4.7) (2021-11-20)
 
 
