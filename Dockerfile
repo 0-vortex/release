@@ -11,6 +11,6 @@ RUN apk add --update make \
   && rm -rf /var/cache/apk/* \
   && rm -rf /package.json
 
-ENTRYPOINT ["npx"]
+ENTRYPOINT ["sh", "-c", "npx"]
 
 CMD ["semantic-release", "--extend", "$( jq -r '.name + \"@\" + .version' package.json )"]
