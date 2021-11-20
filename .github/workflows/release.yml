@@ -97,7 +97,7 @@ jobs:
       - name: "🚀 release"
         id: release
         env:
-          GITHUB_TOKEN: ${{ secrets.SECRET_SAUCE }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           DOCKER_USERNAME: ${{ github.repository_owner }}
           DOCKER_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
