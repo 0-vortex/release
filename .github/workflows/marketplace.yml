@@ -1,0 +1,17 @@
+name: "Publish latest action tag"
+
+on:
+  release:
+    types:
+      - published
+      - edited
+
+jobs:
+  latest:
+    name: Publish latest tag
+    runs-on: ubuntu-latest
+    steps:
+      - name: "🚀 publish action"
+        uses: Actions-R-Us/actions-tagger@v2
+        with:
+          publish_latest_tag: true
