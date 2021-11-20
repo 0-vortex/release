@@ -109,6 +109,11 @@ jobs:
           npm run semantic-release
           echo "::set-output name=version::$(cat package.json | jq -r '.version')"
 
+      - name: "🚀 publish action"
+        uses: Actions-R-Us/actions-tagger@latest
+        with:
+          publish_latest_tag: true
+
   cleanup:
     name: Cleanup actions
     needs:
