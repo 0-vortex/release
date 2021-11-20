@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "🚀 publish action"
-        uses: Actions-R-Us/actions-tagger@v2
+        uses: Actions-R-Us/actions-tagger@v2.0.2
         with:
           publish_latest_tag: true
+          token: ${{ secrets.SECRET_SAUCE }}
