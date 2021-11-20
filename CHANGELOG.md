@@ -1,3 +1,10 @@
+### [3.5.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.5.1...v3.5.2) (2021-11-20)
+
+
+### Tests
+
+* combination matrix execution ([23ef5bc](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/23ef5bc412f5b8cbcca031ab88b64401e65fa29f))
+
 ### [3.5.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.5.0...v3.5.1) (2021-11-20)
 
 
