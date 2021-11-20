@@ -1,3 +1,10 @@
+### [3.5.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.5.3...v3.5.4) (2021-11-20)
+
+
+### Bug Fixes
+
+* correct extends namespace ([77683d6](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/77683d6ae806eae7420b865886efcc9d51af5b01))
+
 ### [3.5.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.5.2...v3.5.3) (2021-11-20)
 
 
