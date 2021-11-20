@@ -1,3 +1,10 @@
+## [3.5.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.9...v3.5.0) (2021-11-20)
+
+
+### Features
+
+* keep action release manual ([f90b40c](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/f90b40c36ddaf30f14deee643f82ff957728869a))
+
 ### [3.4.9](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.8...v3.4.9) (2021-11-20)
 
 
