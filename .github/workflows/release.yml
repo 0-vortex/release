@@ -67,7 +67,7 @@ jobs:
       - name: "🔧 setup node"
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: 14
+          node-version: 16
 
       - name: "🔧 setup cache"
         uses: actions/cache@v2
@@ -78,7 +78,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: "🔧 install npm@7"
-        run: npm i -g npm@7
+        run: npm i -g npm@latest
 
       - name: "📦 install dependencies"
         run: npm ci

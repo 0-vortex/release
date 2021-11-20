@@ -13,4 +13,4 @@ RUN apk add --update make \
 
 ENTRYPOINT ["npx"]
 
-CMD ["semantic-release"]
+CMD ["semantic-release", "--extend", "$( jq -r '.name + \"@\" + .version' package.json )"]
