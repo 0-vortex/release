@@ -1,3 +1,10 @@
+### [3.4.6](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.5...v3.4.6) (2021-11-20)
+
+
+### Tests
+
+* test good version auto tag ([ad805fb](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/ad805fba05bfa3bdaf3f4d5b2383b2023a3fa83f))
+
 ### [3.4.5](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.4...v3.4.5) (2021-11-20)
 
 
