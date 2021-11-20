@@ -1,3 +1,10 @@
+### [3.4.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.3...v3.4.4) (2021-11-20)
+
+
+### Continuous Integration
+
+* fix release context ([a65ca97](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/a65ca9719dbca8680a0ba0b28f39e70e190499e3))
+
 ### [3.4.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.2...v3.4.3) (2021-11-20)
 
 
