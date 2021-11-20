@@ -1,3 +1,10 @@
+### [3.4.9](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.8...v3.4.9) (2021-11-20)
+
+
+### Tests
+
+* try different access token ([45e4341](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/45e4341b4c250f45617f0567619399ec848c9525))
+
 ### [3.4.8](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.4.7...v3.4.8) (2021-11-20)
 
 
