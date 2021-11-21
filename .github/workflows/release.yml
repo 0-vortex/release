@@ -64,24 +64,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: "🔧 setup node"
-        uses: actions/setup-node@v2.1.5
-        with:
-          node-version: 16
-
-      - name: "🔧 setup cache"
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/npm-shrinkwrap.json', '**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - name: "🔧 install npm@latest"
-        run: npm i -g npm@latest
-
       - name: "📦 install dependencies"
-        run: npm ci
+        uses: bahmutov/npm-install@v1
 
       - name: "📂 download docker artifacts"
         uses: actions/download-artifact@v2
