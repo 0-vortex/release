@@ -65,20 +65,13 @@ jobs:
           fetch-depth: 0
 
       - name: "🔧 setup node"
-        uses: actions/setup-node@v2.1.5
+        uses: actions/setup-node@v2.4.1
         with:
           node-version: 16
-
-      - name: "🔧 setup cache"
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/npm-shrinkwrap.json', '**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - name: "🔧 install npm@7"
-        run: npm i -g npm@latest
+          cache: 'npm'
+          cache-dependency-path: |
+            '**/package-lock.json'
+            '**/npm-shrinkwrap.json'
 
       - name: "📦 install dependencies"
         run: npm ci
