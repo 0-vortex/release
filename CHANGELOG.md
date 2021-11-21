@@ -1,3 +1,10 @@
+### [3.6.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.6.0...v3.6.1) (2021-11-21)
+
+
+### Tests
+
+* try out default environment variables ([89cda5c](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/89cda5cc453aae641c21aa01fa6fa1008ac0f214))
+
 ## [3.6.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.5.4...v3.6.0) (2021-11-21)
 
 
