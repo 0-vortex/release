@@ -1,3 +1,15 @@
+### [3.6.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.6.2...v3.6.3) (2021-11-21)
+
+
+### Continuous Integration
+
+* test bahmutov action for installing dependencies ([f466640](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/f466640a529b9df6bdc084eaf6fb371f1f9a0767))
+
+
+### Tests
+
+* try better setup ([e83615e](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/e83615e96c2fef13496efb118987ee69f8256718))
+
 ### [3.6.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.6.1...v3.6.2) (2021-11-21)
 
 
