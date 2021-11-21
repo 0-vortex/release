@@ -69,9 +69,7 @@ jobs:
         with:
           node-version: 16
           cache: 'npm'
-          cache-dependency-path: |
-            '**/package-lock.json'
-            '**/npm-shrinkwrap.json'
+          cache-dependency-path: '**/package-lock.json'
 
       - name: "📦 install dependencies"
         run: npm ci
