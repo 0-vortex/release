@@ -47,6 +47,7 @@ const plugins = [
     "assets": [
       "CHANGELOG.md",
       "package.json",
+      "package-lock.json",
       "npm-shrinkwrap.json",
       "public/diagram.svg"
     ],
