@@ -1,3 +1,10 @@
+### [3.6.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.6.3...v3.6.4) (2021-11-21)
+
+
+### Bug Fixes
+
+* correct npm configuration and test npm ci cache ([fa48edb](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/fa48edb74ff149bf497b6eb6908f622df07fa254))
+
 ### [3.6.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.6.2...v3.6.3) (2021-11-21)
 
 
