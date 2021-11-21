@@ -1,3 +1,17 @@
+### [3.6.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.6.1...v3.6.2) (2021-11-21)
+
+
+### Tests
+
+* last resort setup node action ([9c870f1](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/9c870f1baaf3a919e67240fcf731829ee12508d8))
+* use different cache path ([d62a5d7](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/d62a5d71b9143a86f40b2e57e648a0b2434332f3))
+
+
+### Continuous Integration
+
+* drop failing node-setup action ([b3d3e6e](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/b3d3e6ea4c523910ddf05f3d6fd111ca8d2113a3))
+* test cache aware node-setup action ([07c766d](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/07c766d8e3400d974272869d5a0cb7b8ad5f833e))
+
 ### [3.6.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.6.0...v3.6.1) (2021-11-21)
 
 
