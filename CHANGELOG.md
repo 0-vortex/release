@@ -1,3 +1,10 @@
+## [3.6.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.5.4...v3.6.0) (2021-11-21)
+
+
+### Build System
+
+* keep docker design patterns simple ([94ed5a8](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/94ed5a867a030ac67a1b73f7cd6aaeaa0052a9cf))
+
 ### [3.5.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.5.3...v3.5.4) (2021-11-20)
 
 
