@@ -4,7 +4,7 @@
 # open-sauced-semantic-config-test
 
 > [**semantic-release**](https://github.com/semantic-release/semantic-release) shareable config to publish to `npm` and/or `ghcr`.
-> now with alphas and betas
+> now with alpha and beta pre-releases
 
 [![Commits](https://img.shields.io/github/commit-activity/w/open-sauced/semantic-release-conventional-config?style=flat)](https://github.com/open-sauced/semantic-release-conventional-config/pulse)
 [![Issues](https://img.shields.io/github/issues/open-sauced/semantic-release-conventional-config.svg?style=flat)](https://github.com/open-sauced/semantic-release-conventional-config/issues)
@@ -22,6 +22,7 @@ This shareable configuration use the following plugins:
 - [`@semantic-release/commit-analyzer`](https://github.com/semantic-release/commit-analyzer)
 - [`@semantic-release/release-notes-generator`](https://github.com/semantic-release/release-notes-generator)
 - [`@semantic-release/changelog`](https://github.com/semantic-release/changelog)
+- [`@semantic-release/exec`](https://github.com/semantic-release/exec)
 - [`@semantic-release/npm`](https://github.com/semantic-release/npm)
 - [`@semantic-release/git`](https://github.com/semantic-release/git)
 - [`@semantic-release/github`](https://github.com/semantic-release/github)

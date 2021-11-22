@@ -64,13 +64,24 @@ const plugins = [
   }],
 ];
 
-!process.env.DISABLE_DOCKER && plugins.push([
-  "@semantic-release-plus/docker",
-  {
-    "name": String(process.env.GITHUB_REPOSITORY).toLowerCase(),
-    "registry": "ghcr.io",
-  }
-]);
+if (!process.env.DISABLE_DOCKER !== 'true') {
+  const [owner, repo] = String(process.env.GITHUB_REPOSITORY).toLowerCase().split('/');
+
+  plugins.push([
+    "@eclass/semantic-release-docker",
+    {
+      "baseImageName": `${owner}/${repo}`,
+      "registries": [
+        {
+          "url": "ghcr.io",
+          "imageName": `ghcr.io/${owner}/${repo}`,
+          "user": owner,
+          "password": "GITHUB_TOKEN"
+        }
+      ]
+    }
+  ])
+}
 
 plugins.push([
   "@semantic-release/exec",
