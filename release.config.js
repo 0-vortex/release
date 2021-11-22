@@ -1,5 +1,7 @@
-const plugins = [
-  ["@semantic-release/commit-analyzer", {
+const plugins = [];
+
+plugins.push([
+  "@semantic-release/commit-analyzer", {
     "preset": "conventionalcommits",
     "releaseRules": [
       {type: "build", release: "minor"},
@@ -14,8 +16,11 @@ const plugins = [
     "parserOpts": {
       "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
     }
-  }],
-  ["@semantic-release/release-notes-generator", {
+  }
+]);
+
+plugins.push([
+  "@semantic-release/release-notes-generator", {
     "preset": "conventionalcommits",
     "parserOpts": {
       "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
@@ -38,31 +43,16 @@ const plugins = [
         {type: 'ci', section: 'Continuous Integration'}
       ]
     }
-  }],
-  "@semantic-release/changelog",
-  ["@semantic-release/npm", {
+  }
+]);
+
+plugins.push("@semantic-release/changelog");
+
+plugins.push([
+  "@semantic-release/npm", {
     "tarballDir": "pack"
-  }],
-  ["@semantic-release/github", {
-    "addReleases": 'bottom',
-    "assets": [
-      {
-        "path": "pack/*.tgz",
-        "label": "Static distribution"
-      }
-    ]
-  }],
-  ["@semantic-release/git", {
-    "assets": [
-      "CHANGELOG.md",
-      "package.json",
-      "package-lock.json",
-      "npm-shrinkwrap.json",
-      "public/diagram.svg"
-    ],
-    "message": `chore(release): \${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}`
-  }],
-];
+  }
+]);
 
 if (!process.env.DISABLE_DOCKER) {
   const [owner, repo] = String(process.env.GITHUB_REPOSITORY).toLowerCase().split('/');
@@ -84,8 +74,32 @@ if (!process.env.DISABLE_DOCKER) {
 }
 
 plugins.push([
-  "@semantic-release/exec",
-  {
+  "@semantic-release/github", {
+    "addReleases": 'bottom',
+    "assets": [
+      {
+        "path": "pack/*.tgz",
+        "label": "Static distribution"
+      }
+    ]
+  }
+]);
+
+plugins.push([
+  "@semantic-release/git", {
+    "assets": [
+      "CHANGELOG.md",
+      "package.json",
+      "package-lock.json",
+      "npm-shrinkwrap.json",
+      "public/diagram.svg"
+    ],
+    "message": `chore(release): \${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}`
+  }
+]);
+
+plugins.push([
+  "@semantic-release/exec", {
     "successCmd": "echo 'SEMVER_VERSION=${nextRelease.version}' >> $GITHUB_ENV"
   }
 ]);
