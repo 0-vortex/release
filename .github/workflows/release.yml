@@ -89,7 +89,6 @@ jobs:
       - name: "🚀 release"
         id: release
         env:
-          DISABLE_DOCKER: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           DOCKER_USERNAME: ${{ github.repository_owner }}
