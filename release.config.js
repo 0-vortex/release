@@ -64,7 +64,7 @@ const plugins = [
   }],
 ];
 
-if (!process.env.DISABLE_DOCKER !== 'true') {
+if (!process.env.DISABLE_DOCKER) {
   const [owner, repo] = String(process.env.GITHUB_REPOSITORY).toLowerCase().split('/');
 
   plugins.push([
