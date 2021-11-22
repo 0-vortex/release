@@ -1,3 +1,10 @@
+### [3.7.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.1...v3.7.2) (2021-11-22)
+
+
+### Tests
+
+* try fixing github release notes ([19c60c0](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/19c60c0af8c7959337dc72e25260086041fc33e6))
+
 ### [3.7.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.0...v3.7.1) (2021-11-22)
 
 
