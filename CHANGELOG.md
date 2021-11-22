@@ -1,3 +1,13 @@
+### [3.7.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.0...v3.7.1) (2021-11-22)
+
+
+### Bug Fixes
+
+* correct ci required environment variables ([b10651e](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/b10651e240249c6ade1439812958e8593bc4531b))
+* correct docker release tags using eclass plugin ([8a6be47](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/8a6be472068fb48cf45f66dae85b47c60b2563fe))
+* correct eclass required variables ([de3058f](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/de3058f15865472d4f869ae4ce31db01c4d67b52))
+* this should work now ([87743b6](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/87743b60a4cebd0f57251a7c2df4c46d9fb54cda))
+
 ## [3.7.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.6.4...v3.7.0) (2021-11-21)
 
 
