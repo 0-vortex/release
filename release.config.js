@@ -41,7 +41,7 @@ const plugins = [
   }],
   "@semantic-release/changelog",
   ["@semantic-release/npm", {
-    "tarballDir": "pack"
+    // "tarballDir": "pack"
   }],
   ["@semantic-release/git", {
     "assets": [
@@ -55,12 +55,12 @@ const plugins = [
   }],
   ["@semantic-release/github", {
     "addReleases": 'bottom',
-    "assets": [
-      {
-        "path": "pack/*.tgz",
-        "label": "Static distribution"
-      }
-    ]
+    // "assets": [
+    //   {
+    //     "path": "pack/*.tgz",
+    //     "label": "Static distribution"
+    //   }
+    // ]
   }],
 ];
 
