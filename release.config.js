@@ -75,7 +75,7 @@ if (!process.env.DISABLE_DOCKER !== 'true') {
         {
           "url": "ghcr.io",
           "imageName": `ghcr.io/${owner}/${repo}`,
-          "user": owner,
+          "user": "DOCKER_USERNAME",
           "password": "GITHUB_TOKEN"
         }
       ]
