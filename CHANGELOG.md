@@ -1,3 +1,10 @@
+### [3.7.5](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.4...v3.7.5) (2021-11-22)
+
+
+### Tests
+
+* re-enable docker builds ([8e6c706](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/8e6c706b2e57f71b4131dc2e3001b856e026038e))
+
 ### [3.7.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.3...v3.7.4) (2021-11-22)
 
 
