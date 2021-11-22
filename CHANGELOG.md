@@ -1,3 +1,11 @@
+### [3.7.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.3...v3.7.4) (2021-11-22)
+
+
+### Tests
+
+* inverse tag steps ([64d9622](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/64d9622a8c09ee3b6cbec4fbaf1481e66266fe13))
+* temporary disable docker ([14c3274](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/14c3274d9d3f786714b4ccabd589550f80c4fa3b))
+
 ### [3.7.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.2...v3.7.3) (2021-11-22)
 
 
