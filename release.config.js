@@ -41,7 +41,16 @@ const plugins = [
   }],
   "@semantic-release/changelog",
   ["@semantic-release/npm", {
-    // "tarballDir": "pack"
+    "tarballDir": "pack"
+  }],
+  ["@semantic-release/github", {
+    "addReleases": 'bottom',
+    "assets": [
+      {
+        "path": "pack/*.tgz",
+        "label": "Static distribution"
+      }
+    ]
   }],
   ["@semantic-release/git", {
     "assets": [
@@ -52,15 +61,6 @@ const plugins = [
       "public/diagram.svg"
     ],
     "message": `chore(release): \${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}`
-  }],
-  ["@semantic-release/github", {
-    "addReleases": 'bottom',
-    // "assets": [
-    //   {
-    //     "path": "pack/*.tgz",
-    //     "label": "Static distribution"
-    //   }
-    // ]
   }],
 ];
 
