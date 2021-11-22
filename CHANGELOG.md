@@ -1,3 +1,10 @@
+### [3.7.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.2...v3.7.3) (2021-11-22)
+
+
+### Tests
+
+* disable docker release for release notes ([53c804c](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/53c804cacede5034341b5ba2f4ce7df08ec3b626))
+
 ### [3.7.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.1...v3.7.2) (2021-11-22)
 
 
