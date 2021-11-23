@@ -32,7 +32,7 @@ jobs:
       - name: "🚀 release"
         id: release
         env:
-          DEBUG: 'semantic-release:*'
+          PREVIEW: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GIT_AUTHOR_NAME: ${{ github.event.commits[0].author.username }}

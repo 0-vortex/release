@@ -72,18 +72,20 @@ if (!process.env.DISABLE_DOCKER) {
   ])
 }
 
-plugins.push([
-  "@semantic-release/git", {
-    "assets": [
-      "CHANGELOG.md",
-      "package.json",
-      "package-lock.json",
-      "npm-shrinkwrap.json",
-      "public/diagram.svg"
-    ],
-    "message": `chore(release): \${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}`
-  }
-]);
+if (!process.env.PREVIEW) {
+  plugins.push([
+    "@semantic-release/git", {
+      "assets": [
+        "CHANGELOG.md",
+        "package.json",
+        "package-lock.json",
+        "npm-shrinkwrap.json",
+        "public/diagram.svg"
+      ],
+      "message": `chore(release): \${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}`
+    }
+  ]);
+}
 
 plugins.push([
   "@semantic-release/github", {
