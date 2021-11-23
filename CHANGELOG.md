@@ -1,3 +1,10 @@
+### [3.7.8](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.7...v3.7.8) (2021-11-23)
+
+
+### Bug Fixes
+
+* correct ghcr deploy url for container based image ([ce6603c](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/ce6603c41a7ee5b5c02ac004c12e9403881ca8db))
+
 ### [3.7.7](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.6...v3.7.7) (2021-11-23)
 
 
