@@ -29,13 +29,12 @@
   },
   "devDependencies": {
     "@open-sauced/check-engines": "^1.0.0",
-    "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0"
+    "@open-sauced/conventional-commit": "^1.0.1"
   },
   "scripts": {
     "preinstall": "npx @open-sauced/check-engines",
     "prestart": "npx @open-sauced/check-engines",
-    "push": "npx cz",
+    "push": "npx @open-sauced/conventional-commit",
     "semantic-release": "npx semantic-release"
   },
   "publishConfig": {
