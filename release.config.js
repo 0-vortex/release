@@ -106,6 +106,7 @@ plugins.push([
 ]);
 
 module.exports = {
+  "baseBranch": "main",
   "branches": [
     "main",
     {
