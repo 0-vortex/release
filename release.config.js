@@ -58,32 +58,19 @@ if (!process.env.DISABLE_DOCKER) {
   const [owner, repo] = String(process.env.GITHUB_REPOSITORY).toLowerCase().split('/');
 
   plugins.push([
-    "@eclass/semantic-release-docker",
+    "@semantic-release-plus/docker",
     {
-      "baseImageName": `${owner}/${repo}`,
-      "registries": [
-        {
-          "url": "ghcr.io",
-          "imageName": `ghcr.io/${owner}/${repo}`,
-          "user": "DOCKER_USERNAME",
-          "password": "GITHUB_TOKEN"
-        }
-      ]
+      "name": {
+        "registry": `ghcr.io/${owner}/${repo}`,
+        "namespace": owner,
+        "repository": repo,
+        "tag": "latest"
+      },
+      "registry": "ghcr.io",
+      "publishChannelTag": true,
     }
   ])
 }
-
-plugins.push([
-  "@semantic-release/github", {
-    "addReleases": 'bottom',
-    "assets": [
-      {
-        "path": "pack/*.tgz",
-        "label": "Static distribution"
-      }
-    ]
-  }
-]);
 
 plugins.push([
   "@semantic-release/git", {
@@ -95,6 +82,18 @@ plugins.push([
       "public/diagram.svg"
     ],
     "message": `chore(release): \${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}`
+  }
+]);
+
+plugins.push([
+  "@semantic-release/github", {
+    "addReleases": 'bottom',
+    "assets": [
+      {
+        "path": "pack/*.tgz",
+        "label": "Static distribution"
+      }
+    ]
   }
 ]);
 
