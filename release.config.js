@@ -61,7 +61,7 @@ if (!process.env.DISABLE_DOCKER) {
     "@semantic-release-plus/docker",
     {
       "name": {
-        "registry": `ghcr.io/${owner}/${repo}`,
+        "registry": `ghcr.io`,
         "namespace": owner,
         "repository": repo,
         "tag": "latest"
