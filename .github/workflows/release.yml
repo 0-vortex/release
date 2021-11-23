@@ -52,8 +52,8 @@ jobs:
 
   release:
     environment:
-      name: npm
-      url: https://www.npmjs.com/package/open-sauced-semantic-config-test/v/${{ steps.release.outputs.version }}
+      name: production
+      url: https://github.com/${{ github.repository }}/releases/tag/v${{ steps.release.outputs.version }}
     name: Semantic release
     needs:
       - docker
