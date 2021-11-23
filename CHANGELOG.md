@@ -1,3 +1,10 @@
+### [3.7.9](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.8...v3.7.9) (2021-11-23)
+
+
+### Continuous Integration
+
+* debug build in hopes of magic fix ([b7ec21d](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/b7ec21d63e649cb37d208e16fb79d034ca6706d1))
+
 ### [3.7.8](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.7...v3.7.8) (2021-11-23)
 
 
