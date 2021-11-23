@@ -1,3 +1,15 @@
+### [3.7.7](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.6...v3.7.7) (2021-11-23)
+
+
+### Bug Fixes
+
+* add missing docker connection strings ([dfdb90b](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/dfdb90bdfafbd0c6282909b1ee72cc74b03969ad))
+
+
+### Tests
+
+* try to exploit the channel configuration ([5feb3c9](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/5feb3c9c1143c99fbb493bb3d43c227380ba2745))
+
 ### [3.7.6](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.5...v3.7.6) (2021-11-22)
 
 
