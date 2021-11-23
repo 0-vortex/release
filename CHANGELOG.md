@@ -1,3 +1,10 @@
+### [3.7.11](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.10...v3.7.11) (2021-11-23)
+
+
+### Bug Fixes
+
+* correct deployment environment in release workflow ([cac7704](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/cac77041adf7b0d04954012dc713bcf3d1e6219d))
+
 ### [3.7.10](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.9...v3.7.10) (2021-11-23)
 
 
