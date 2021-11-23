@@ -29,13 +29,15 @@
   },
   "devDependencies": {
     "@open-sauced/check-engines": "^1.2.0",
-    "@open-sauced/conventional-commit": "^1.0.1"
+    "@open-sauced/conventional-commit": "^1.0.1",
+    "semantic-release-github-pr": "^6.0.1"
   },
   "scripts": {
     "preinstall": "npx @open-sauced/check-engines",
     "prestart": "npx @open-sauced/check-engines",
     "push": "npx @open-sauced/conventional-commit",
-    "semantic-release": "npx semantic-release"
+    "semantic-release": "npx semantic-release",
+    "semantic-preview": "npx semantic-release-github-pr"
   },
   "publishConfig": {
     "access": "public"
