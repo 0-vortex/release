@@ -17,15 +17,15 @@
     "url": "git+ssh://git@github.com/0-vortex/open-sauced-semantic-config-test.git"
   },
   "peerDependencies": {
-    "semantic-release": "^18.0.0"
+    "semantic-release": "^18.0.1"
   },
   "dependencies": {
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/exec": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
     "conventional-changelog-conventionalcommits": "^4.6.1",
-    "semantic-release": "^18.0.0",
-    "semantic-release-docker-mini": "^1.0.1"
+    "semantic-release": "^18.0.1",
+    "semantic-release-docker-mini": "^1.1.0"
   },
   "devDependencies": {
     "@open-sauced/check-engines": "^1.2.0",
