@@ -16,17 +16,17 @@ const {
 
 const plugins = [];
 
-console.log(`GITHUB_SHA: ${GITHUB_SHA}`);
-
 (async () => {
   const { stdout: authorName } = await execa('git', ['log', '-1', '--pretty=format:%an', GITHUB_SHA]);
   const { stdout: authorEmail } = await execa('git', ['log', '-1', '--pretty=format:%ae', GITHUB_SHA]);
-  console.log(`authorName: ${authorName}`);
-  console.log(`authorEmail: ${authorEmail}`);
+  authorName && !GIT_AUTHOR_NAME && (process.env.GIT_AUTHOR_NAME = `${authorName}`);
+  authorEmail && !GIT_AUTHOR_EMAIL && (process.env.GIT_AUTHOR_EMAIL = `${authorEmail}`);
 })();
 
 !GIT_COMMITTER_NAME && (process.env.GIT_COMMITTER_NAME = "open-sauced[bot]");
 !GIT_COMMITTER_EMAIL && (process.env.GIT_COMMITTER_EMAIL = "63161813+open-sauced[bot]@users.noreply.github.com");
+
+console.log(process.env);
 
 plugins.push([
   "@semantic-release/commit-analyzer", {
