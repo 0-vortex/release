@@ -1,5 +1,5 @@
 const { existsSync } = require('fs');
-const execa = require('execa');
+const { execaSync } = require('execa');
 
 const {
   GITHUB_SHA,
@@ -16,12 +16,14 @@ const {
 
 const plugins = [];
 
-(async () => {
-  const { stdout: authorName } = await execa('git', ['log', '-1', '--pretty=format:%an', GITHUB_SHA]);
-  const { stdout: authorEmail } = await execa('git', ['log', '-1', '--pretty=format:%ae', GITHUB_SHA]);
+try {
+  const { stdout: authorName } = await execaSync('git', ['log', '-1', '--pretty=format:%an', GITHUB_SHA]);
+  const { stdout: authorEmail } = await execaSync('git', ['log', '-1', '--pretty=format:%ae', GITHUB_SHA]);
   authorName && !GIT_AUTHOR_NAME && (process.env.GIT_AUTHOR_NAME = `${authorName}`);
   authorEmail && !GIT_AUTHOR_EMAIL && (process.env.GIT_AUTHOR_EMAIL = `${authorEmail}`);
-})();
+} catch (error) {
+  console.log(error);
+}
 
 !GIT_COMMITTER_NAME && (process.env.GIT_COMMITTER_NAME = "open-sauced[bot]");
 !GIT_COMMITTER_EMAIL && (process.env.GIT_COMMITTER_EMAIL = "63161813+open-sauced[bot]@users.noreply.github.com");
