@@ -1,4 +1,4 @@
-import { existsSync } from 'fs';
+const { existsSync } = require('fs');
 
 const plugins = [];
 
