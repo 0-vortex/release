@@ -1,3 +1,10 @@
+### [3.8.7](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.6...v3.8.7) (2021-11-27)
+
+
+### Code Refactoring
+
+* reorder plugins back to original setting ([0aca8f8](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/0aca8f8138635acebbe6f7718d1a7c48ac1cd53e))
+
 ### [3.8.6](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.5...v3.8.6) (2021-11-27)
 
 
