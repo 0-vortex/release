@@ -14,6 +14,12 @@ const {
   GIT_AUTHOR_NAME,
   GIT_AUTHOR_EMAIL,
 } = process.env;
+const successCmd = `
+echo 'RELEASE_TAG=v\${nextRelease.version}' >> $GITHUB_ENV
+echo 'RELEASE_VERSION=\${nextRelease.version}' >> $GITHUB_ENV
+echo '::set-output name=release-tag::v\${nextRelease.version}'
+echo '::set-output name=release-version::\${nextRelease.version}'
+`;
 
 !GIT_COMMITTER_NAME && (process.env.GIT_COMMITTER_NAME = "open-sauced[bot]");
 !GIT_COMMITTER_EMAIL && (process.env.GIT_COMMITTER_EMAIL = "63161813+open-sauced[bot]@users.noreply.github.com");
@@ -26,8 +32,6 @@ try {
 } catch (error) {
   console.log(error);
 }
-
-console.log(process.env);
 
 plugins.push([
   "@semantic-release/commit-analyzer", {
@@ -135,18 +139,13 @@ try {
   console.error(err);
 }
 
-const successCmd = `
-echo 'RELEASE_TAG=v\${nextRelease.version}' >> $GITHUB_ENV
-echo 'RELEASE_VERSION=\${nextRelease.version}' >> $GITHUB_ENV
-echo '::set-output name=RELEASE_TAG::v\${nextRelease.version}'
-echo '::set-output name=RELEASE_VERSION::\${nextRelease.version}'
-`;
-
-plugins.push([
-  "@semantic-release/exec", {
-    successCmd
-  }
-]);
+if (process.env.GITHUB_ACTIONS === "true") {
+  plugins.push([
+    "@semantic-release/exec", {
+      successCmd
+    }
+  ]);
+}
 
 module.exports = {
   "branches": [

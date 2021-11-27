@@ -2,9 +2,9 @@ name: 'open-sauced-semantic-config-test'
 author: '0-vortex'
 description: 'Run @open-sauced/semantic-release-conventional-config on a repo'
 outputs:
-  RELEASE_TAG:
+  release-tag:
     description: 'The tag that was released on success'
-  RELEASE_VERSION:
+  release-version:
     description: 'The version that was released on success'
 branding:
   icon: 'package'
