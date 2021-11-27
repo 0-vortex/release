@@ -1,3 +1,16 @@
+## [3.13.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.12.0...v3.13.0) (2021-11-27)
+
+
+### Features
+
+* add older version of execa ([27870dd](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/27870dd2941cf9b8f2f4410fbb565175e396ff03))
+
+
+### Code Refactoring
+
+* do it the old fashioned way ([c6c5358](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/c6c5358cdbd5a1d8aca72b8a11b479af6fc4a984))
+* execute git to get data ([df1bd7c](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/df1bd7caa72d76bd2cfb1257f246587bf8f6fb89))
+
 ## [3.12.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.11.3...v3.12.0) (2021-11-27)
 
 
