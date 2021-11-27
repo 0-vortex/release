@@ -1,3 +1,10 @@
+### [3.7.13](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.12...v3.7.13) (2021-11-27)
+
+
+### Tests
+
+* test docker push channel fix ([fa03be9](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/fa03be977ee0d0dbe52c205b0d05c24324fa7d63))
+
 ### [3.7.12](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.11...v3.7.12) (2021-11-27)
 
 
