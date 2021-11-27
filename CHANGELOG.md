@@ -1,3 +1,10 @@
+### [3.8.14](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.13...v3.8.14) (2021-11-27)
+
+
+### Bug Fixes
+
+* revert global path change for release configuration ([b44bb59](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/b44bb59e2f9a3b82acd813867deed634c24dba3a))
+
 ### [3.8.13](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.12...v3.8.13) (2021-11-27)
 
 
