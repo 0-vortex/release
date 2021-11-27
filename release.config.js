@@ -126,10 +126,12 @@ try {
 plugins.push([
   "@semantic-release/exec", {
     // "verifyConditionsCmd": "echo '${GITHUB_SHA}'",
-    "verifyConditionsCmd": "echo $(git log -1 --pretty=format:\"%an\" ${GITHUB_SHA})",
+    "verifyConditionsCmd": "echo 'TEST_AUTHOR_NAME=$(git log -1 --pretty=format:\"%an\" ${GITHUB_SHA})' >> $GITHUB_ENV",
     "successCmd": "echo 'SEMVER_VERSION=${nextRelease.version}' >> $GITHUB_ENV"
   }
 ]);
+
+console.log(process.env.TEST_AUTHOR_NAME);
 
 module.exports = {
   "branches": [
