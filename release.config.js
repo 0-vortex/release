@@ -1,5 +1,5 @@
 const { existsSync } = require('fs');
-const { execaSync } = require('execa');
+const execa = require('execa');
 
 const {
   GITHUB_SHA,
@@ -17,8 +17,8 @@ const {
 const plugins = [];
 
 try {
-  const { stdout: authorName } = execaSync('git', ['log', '-1', '--pretty=format:%an', GITHUB_SHA]);
-  const { stdout: authorEmail } = execaSync('git', ['log', '-1', '--pretty=format:%ae', GITHUB_SHA]);
+  const { stdout: authorName } = execa.sync('git', ['log', '-1', '--pretty=format:%an', GITHUB_SHA]);
+  const { stdout: authorEmail } = execa.sync('git', ['log', '-1', '--pretty=format:%ae', GITHUB_SHA]);
   authorName && !GIT_AUTHOR_NAME && (process.env.GIT_AUTHOR_NAME = `${authorName}`);
   authorEmail && !GIT_AUTHOR_EMAIL && (process.env.GIT_AUTHOR_EMAIL = `${authorEmail}`);
 } catch (error) {
