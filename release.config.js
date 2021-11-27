@@ -135,9 +135,10 @@ try {
 
 plugins.push([
   "@semantic-release/exec", {
-    "successCmd":
-      "echo 'RELEASE_TAG=v${nextRelease.version}' >> $GITHUB_ENV\\" +
-      "echo 'RELEASE_VERSION=${nextRelease.version}' >> $GITHUB_ENV"
+    "successCmd": `
+      echo 'RELEASE_TAG=v\${nextRelease.version}' >> $GITHUB_ENV
+      echo 'RELEASE_VERSION=\${nextRelease.version}' >> $GITHUB_ENV
+    `
   }
 ]);
 
