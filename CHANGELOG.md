@@ -1,3 +1,10 @@
+### [3.8.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.1...v3.8.2) (2021-11-27)
+
+
+### Continuous Integration
+
+* test docker build again ([5101e9d](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/5101e9dc31c18362925598660debf419e15b4faf))
+
 ### [3.8.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.0...v3.8.1) (2021-11-27)
 
 
