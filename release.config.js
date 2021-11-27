@@ -57,17 +57,14 @@ plugins.push([
 ]);
 
 console.log(`process.env.DISABLE_DOCKER=${process.env.DISABLE_DOCKER}`);
-await fs.access('./Dockerfile', fs.F_OK, (err) => {
-  if (err) {
-    console.error(err)
-
-    process.env.DISABLE_DOCKER = "true";
-    return
+try {
+  if (fs.existsSync('./Dockerfile')) {
+    process.env.DISABLE_DOCKER = "false";
   }
-
-  //file exists
-  process.env.DISABLE_DOCKER = "false";
-});
+} catch(err) {
+  console.error(err);
+  process.env.DISABLE_DOCKER = "true";
+}
 console.log(`process.env.DISABLE_DOCKER=${process.env.DISABLE_DOCKER}`);
 
 if (!process.env.DISABLE_DOCKER) {
