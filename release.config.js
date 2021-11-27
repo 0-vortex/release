@@ -1,5 +1,13 @@
 const { existsSync } = require('fs');
 
+const {
+  GITHUB_REPOSITORY_OWNER,
+  GITHUB_REPOSITORY,
+  GITHUB_TOKEN,
+  DOCKER_USERNAME,
+  DOCKER_PASSWORD,
+} = process.env;
+
 const plugins = [];
 
 plugins.push([
@@ -85,11 +93,13 @@ try {
   const dockerExists = existsSync('./Dockerfile');
 
   if (dockerExists) {
-    const [owner, repo] = String(process.env.GITHUB_REPOSITORY).toLowerCase().split('/');
+    const [owner, repo] = String(GITHUB_REPOSITORY).toLowerCase().split('/');
 
-    console.log(process.env);
-    console.log(`DOCKER_USERNAME: ${process.env.DOCKER_USERNAME}`);
-    console.log(`DOCKER_PASSWORD: ${process.env.DOCKER_PASSWORD}`);
+    !DOCKER_USERNAME && (process.env.DOCKER_USERNAME = GITHUB_REPOSITORY_OWNER);
+    !DOCKER_PASSWORD && (process.env.DOCKER_PASSWORD = GITHUB_TOKEN);
+
+    console.log(process.env.DOCKER_USERNAME);
+    console.log(process.env.DOCKER_PASSWORD);
 
     plugins.push([
       "semantic-release-docker-mini",
