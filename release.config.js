@@ -20,8 +20,8 @@ const plugins = [];
 plugins.push([
   "@semantic-release/exec", {
     "successCmd":
-      "echo 'GIT_AUTHOR_NAME=${{ github.event.commits[0].author.username }}' >> $GITHUB_ENV\\" +
-      "echo 'GIT_AUTHOR_EMAIL=${{ github.event.commits[0].author.email }}' >> $GITHUB_ENV"
+      "echo 'GIT_AUTHOR_NAME=$GITHUB_SHA' >> $GITHUB_ENV\\" +
+      "echo 'GIT_AUTHOR_EMAIL=$GITHUB_SHA' >> $GITHUB_ENV"
     // "successCmd": "echo 'SEMVER_VERSION=${nextRelease.version}' >> $GITHUB_ENV"
     // "successCmd": "echo 'TEST_AUTHOR_NAME=$(git log -1 --pretty=format:\"%an\" $GITHUB_SHA)' >> $GITHUB_ENV",
   }
