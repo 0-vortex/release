@@ -1,3 +1,10 @@
+### [3.8.16](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.15...v3.8.16) (2021-11-27)
+
+
+### Performance Improvements
+
+* start autoloading docker variables ([6155306](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/615530638fd6a85a31b05f1a04aa9343363a841e))
+
 ### [3.8.15](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.14...v3.8.15) (2021-11-27)
 
 
