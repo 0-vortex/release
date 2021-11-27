@@ -125,11 +125,7 @@ try {
 
 plugins.push([
   "@semantic-release/exec", {
-    "verifyConditionsCmd": (context, context2) => {
-      console.log(context);
-      console.log(context2);
-      console.log(process.env);
-    },
+    "verifyConditionsCmd": "printenv",
     "successCmd": "echo 'SEMVER_VERSION=${nextRelease.version}' >> $GITHUB_ENV"
   }
 ]);
