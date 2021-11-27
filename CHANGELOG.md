@@ -1,3 +1,16 @@
+## [3.11.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.10.0...v3.11.0) (2021-11-27)
+
+
+### Features
+
+* test git log capabilities ([96c53ac](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/96c53ac96d03cb2744747b5a2bd393805360cc60))
+
+
+### Tests
+
+* test variables ([39d1a0b](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/39d1a0b2fbaba9e5067593aa357c478d0ddb2bc4))
+* try overloading the variables again ([902254e](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/902254ec9782f8c7b124cdd8f0f3299c51ad1a4f))
+
 ## [3.10.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.9.2...v3.10.0) (2021-11-27)
 
 
