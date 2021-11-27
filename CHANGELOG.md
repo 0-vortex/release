@@ -1,3 +1,10 @@
+### [3.7.18](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.17...v3.7.18) (2021-11-27)
+
+
+### Tests
+
+* experiment with process overload ([39be56c](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/39be56cd6eeb046fae7b628363a6a6b372689c26))
+
 ### [3.7.17](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.16...v3.7.17) (2021-11-27)
 
 
