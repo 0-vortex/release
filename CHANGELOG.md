@@ -1,3 +1,10 @@
+### [3.8.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.0...v3.8.1) (2021-11-27)
+
+
+### Bug Fixes
+
+* reverse variables ([a4ccb9c](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/a4ccb9cb03048a968d7bf0b26ca30fadc4523097))
+
 ## [3.8.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.19...v3.8.0) (2021-11-27)
 
 
