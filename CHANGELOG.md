@@ -1,3 +1,10 @@
+### [3.15.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.15.1...v3.15.2) (2021-11-27)
+
+
+### Bug Fixes
+
+* correct execa usage for non-esm version ([279c016](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/279c01625ea8962d3c80043bdf46e167c4816656))
+
 ### [3.15.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.15.0...v3.15.1) (2021-11-27)
 
 
