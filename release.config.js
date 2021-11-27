@@ -10,7 +10,7 @@ const {
   GIT_COMMITTER_EMAIL,
 } = process.env;
 
-console.log(process.env);
+console.log(process.env.GITHUB_SHA);
 
 !GIT_COMMITTER_NAME && (process.env.GIT_COMMITTER_NAME = "open-sauced[bot]");
 !GIT_COMMITTER_EMAIL && (process.env.GIT_COMMITTER_EMAIL = "63161813+open-sauced[bot]@users.noreply.github.com");
@@ -20,12 +20,7 @@ const plugins = [];
 plugins.push([
   "@semantic-release/exec", {
     "prepareCmd":
-      "echo $GITHUB_SHA\\" +
-      "echo $GITHUB_SHA\\" +
-      "echo 'GIT_AUTHOR_NAME=$GITHUB_SHA' >> $GITHUB_ENV\\" +
-      "echo 'GIT_AUTHOR_NAME2=${nextRelease}' >> $GITHUB_ENV\\" +
-      "echo 'GIT_AUTHOR_NAME3=${env.GITHUB_SHA}' >> $GITHUB_ENV\\" +
-      "echo 'GIT_AUTHOR_EMAIL=$GITHUB_SHA' >> $GITHUB_ENV"
+      "export GIT_AUTHOR_NAME=$GITHUB_SHA"
     // "successCmd": "echo 'SEMVER_VERSION=${nextRelease.version}' >> $GITHUB_ENV"
     // "successCmd": "echo 'TEST_AUTHOR_NAME=$(git log -1 --pretty=format:\"%an\" $GITHUB_SHA)' >> $GITHUB_ENV",
   }
