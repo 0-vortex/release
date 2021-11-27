@@ -1,3 +1,10 @@
+### [3.9.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.9.0...v3.9.1) (2021-11-27)
+
+
+### Tests
+
+* log defaults ([061b43d](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/061b43d6de05217c740e665c4571477ec141fdbe))
+
 ## [3.9.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.17...v3.9.0) (2021-11-27)
 
 
