@@ -17,9 +17,8 @@ const plugins = [];
 console.log(`GITHUB_SHA: ${GITHUB_SHA}`);
 
 (async () => {
-  const authorName = await execa('git', ['log', '-1', '--pretty=format:"%an"', GITHUB_SHA], {cwd});
-  console.log(`authorName: ${authorName}`);
-  console.log(authorName);
+  const result = await execa('git', ['log', '-1', '--pretty=format:"%an"', GITHUB_SHA]);
+  console.log(result);
 })();
 
 !GIT_COMMITTER_NAME && (process.env.GIT_COMMITTER_NAME = "open-sauced[bot]");
