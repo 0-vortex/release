@@ -12,24 +12,18 @@ const {
   GIT_COMMITTER_EMAIL,
 } = process.env;
 
+const plugins = [];
+
 console.log(`GITHUB_SHA: ${GITHUB_SHA}`);
 
-const authorName = await execa('git', ['log', '-1', '--pretty=format:"%an"', GITHUB_SHA], {cwd});
-console.log(authorName);
+(async () => {
+  const authorName = await execa('git', ['log', '-1', '--pretty=format:"%an"', GITHUB_SHA], {cwd});
+  console.log(`authorName: ${authorName}`);
+  console.log(authorName);
+})();
 
 !GIT_COMMITTER_NAME && (process.env.GIT_COMMITTER_NAME = "open-sauced[bot]");
 !GIT_COMMITTER_EMAIL && (process.env.GIT_COMMITTER_EMAIL = "63161813+open-sauced[bot]@users.noreply.github.com");
-
-const plugins = [];
-
-plugins.push([
-  "@semantic-release/exec", {
-    "prepareCmd":
-      "export GIT_AUTHOR_NAME=$GITHUB_SHA"
-    // "successCmd": "echo 'SEMVER_VERSION=${nextRelease.version}' >> $GITHUB_ENV"
-    // "successCmd": "echo 'TEST_AUTHOR_NAME=$(git log -1 --pretty=format:\"%an\" $GITHUB_SHA)' >> $GITHUB_ENV",
-  }
-]);
 
 plugins.push([
   "@semantic-release/commit-analyzer", {
@@ -137,11 +131,11 @@ try {
   console.error(err);
 }
 
-// plugins.push([
-//   "@semantic-release/exec", {
-//     "successCmd": "echo 'SEMVER_VERSION=${nextRelease.version}' >> $GITHUB_ENV"
-//   }
-// ]);
+plugins.push([
+  "@semantic-release/exec", {
+    "successCmd": "echo 'SEMVER_VERSION=${nextRelease.version}' >> $GITHUB_ENV"
+  }
+]);
 
 console.log(`GIT_AUTHOR_NAME: ${process.env.GIT_AUTHOR_NAME}`);
 console.log(`GIT_AUTHOR_EMAIL: ${process.env.GIT_AUTHOR_EMAIL}`);
