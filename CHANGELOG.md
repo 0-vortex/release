@@ -1,3 +1,10 @@
+## [3.17.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.16.2...v3.17.0) (2021-11-27)
+
+
+### Features
+
+* prepare tooling for conditional checking ([4adb197](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/4adb19779c59773a6463f7be576aa8ec412149d4))
+
 ### [3.16.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.16.1...v3.16.2) (2021-11-27)
 
 
