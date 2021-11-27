@@ -1,3 +1,10 @@
+### [3.8.5](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.4...v3.8.5) (2021-11-27)
+
+
+### Tests
+
+* test workspace variables ([3c337c2](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/3c337c272e177d24ba0176174aedf6f38777aeb1))
+
 ### [3.8.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.3...v3.8.4) (2021-11-27)
 
 
