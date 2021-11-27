@@ -1,3 +1,10 @@
+### [3.8.8](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.7...v3.8.8) (2021-11-27)
+
+
+### Bug Fixes
+
+* use better extend configuration ([31480ac](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/31480acb5cacfbc16254f18a7d0488a72ff792f8))
+
 ### [3.8.7](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.6...v3.8.7) (2021-11-27)
 
 
