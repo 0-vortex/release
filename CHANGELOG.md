@@ -1,3 +1,10 @@
+### [3.8.11](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.10...v3.8.11) (2021-11-27)
+
+
+### Code Refactoring
+
+* try out something less stupid ([c2e6adc](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/c2e6adceefb4c9736becd76e0d70d00cac85c627))
+
 ### [3.8.10](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.9...v3.8.10) (2021-11-27)
 
 
