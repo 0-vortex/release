@@ -1,3 +1,10 @@
+### [3.7.19](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.18...v3.7.19) (2021-11-27)
+
+
+### Continuous Integration
+
+* try out overloading in main repo ([8d152cf](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/8d152cf3d3ed51826bd248057e76f46dd742a437))
+
 ### [3.7.18](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.17...v3.7.18) (2021-11-27)
 
 
