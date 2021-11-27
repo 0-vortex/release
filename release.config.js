@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 const plugins = [];
 
 plugins.push([
@@ -54,7 +56,19 @@ plugins.push([
   }
 ]);
 
-console.log(process.env);
+console.log(process.env.DISABLE_DOCKER);
+fs.access('./Dockerfile', fs.F_OK, (err) => {
+  if (err) {
+    console.error(err)
+
+    process.env.DISABLE_DOCKER = "true";
+    return
+  }
+
+  //file exists
+  process.env.DISABLE_DOCKER = "false";
+});
+console.log(process.env.DISABLE_DOCKER);
 
 if (!process.env.DISABLE_DOCKER) {
   const [owner, repo] = String(process.env.GITHUB_REPOSITORY).toLowerCase().split('/');
