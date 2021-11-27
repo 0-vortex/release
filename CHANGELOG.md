@@ -1,3 +1,10 @@
+### [3.11.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.11.1...v3.11.2) (2021-11-27)
+
+
+### Code Refactoring
+
+* add less fancy variables ([3806a88](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/3806a88769262fe6f89af204639fcc0555d8e8c1))
+
 ### [3.11.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.11.0...v3.11.1) (2021-11-27)
 
 
