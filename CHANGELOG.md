@@ -1,3 +1,10 @@
+### [3.8.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.3...v3.8.4) (2021-11-27)
+
+
+### Tests
+
+* check versioning race condition ([b56cc47](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/b56cc475c44cf3ad8e863e6737d6266c99c91a4a))
+
 ### [3.8.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.2...v3.8.3) (2021-11-27)
 
 
