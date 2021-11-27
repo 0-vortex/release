@@ -10,6 +10,9 @@ const {
   GIT_COMMITTER_EMAIL,
 } = process.env;
 
+console.log(`GIT_COMMITTER_NAME: ${GIT_COMMITTER_NAME}`);
+console.log(`GIT_COMMITTER_EMAIL: ${GIT_COMMITTER_EMAIL}`);
+
 !GIT_COMMITTER_NAME && (process.env.GIT_COMMITTER_NAME = "open-sauced[bot]");
 !GIT_COMMITTER_EMAIL && (process.env.GIT_COMMITTER_EMAIL = "63161813+open-sauced[bot]@users.noreply.github.com");
 
