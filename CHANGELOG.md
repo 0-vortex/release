@@ -1,3 +1,10 @@
+## [3.19.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.18.0...v3.19.0) (2021-11-27)
+
+
+### Features
+
+* implement github actions docker ghcr based versioning ([5fc5cea](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/5fc5cea115a33b9cfa372caa0067962c79146650))
+
 ## [3.18.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.17.0...v3.18.0) (2021-11-27)
 
 
