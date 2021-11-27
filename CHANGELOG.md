@@ -1,3 +1,10 @@
+### [3.11.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.11.0...v3.11.1) (2021-11-27)
+
+
+### Continuous Integration
+
+* test overload execution step ([6c74d3d](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/6c74d3d8f4e9d26fa55375f3a94ca1b3af59309e))
+
 ## [3.11.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.10.0...v3.11.0) (2021-11-27)
 
 
