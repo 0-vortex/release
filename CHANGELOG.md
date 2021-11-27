@@ -1,3 +1,11 @@
+### [3.8.6](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.5...v3.8.6) (2021-11-27)
+
+
+### Bug Fixes
+
+* cjs properly ([cdf10cc](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/cdf10ccf7530882ff5f8903d7572e73d32e73e90))
+* correct path exists condition ([17d7c9b](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/17d7c9b7bd41f21c13d8a57cc3dd7ff6398884c0))
+
 ### [3.8.5](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.4...v3.8.5) (2021-11-27)
 
 
