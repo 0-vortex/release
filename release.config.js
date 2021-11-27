@@ -19,7 +19,9 @@ const plugins = [];
 
 plugins.push([
   "@semantic-release/exec", {
-    "successCmd":
+    "prepareCmd":
+      "echo $GITHUB_SHA\\" +
+      "echo $GITHUB_SHA\\" +
       "echo 'GIT_AUTHOR_NAME=$GITHUB_SHA' >> $GITHUB_ENV\\" +
       "echo 'GIT_AUTHOR_EMAIL=$GITHUB_SHA' >> $GITHUB_ENV"
     // "successCmd": "echo 'SEMVER_VERSION=${nextRelease.version}' >> $GITHUB_ENV"
@@ -140,7 +142,7 @@ try {
 // ]);
 
 console.log(`GIT_AUTHOR_NAME: ${process.env.GIT_AUTHOR_NAME}`);
-console.log(`GIT_AUTHOR_NAME: ${process.env.GIT_AUTHOR_EMAIL}`);
+console.log(`GIT_AUTHOR_EMAIL: ${process.env.GIT_AUTHOR_EMAIL}`);
 
 module.exports = {
   "branches": [
