@@ -102,15 +102,9 @@ try {
       }
     ])
   }
-  // if (fs.existsSync('./Dockerfile')) {
-  //   process.env.DISABLE_DOCKER = undefined;
-  // }
 } catch(err) {
   console.error(err);
 }
-// console.log(`process.env.DISABLE_DOCKER=${process.env.DISABLE_DOCKER}`);
-// console.log(process.cwd());
-// console.log(process.env.GITHUB_WORKSPACE);
 
 plugins.push([
   "@semantic-release/exec", {
