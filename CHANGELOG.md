@@ -1,3 +1,10 @@
+### [3.8.17](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.16...v3.8.17) (2021-11-27)
+
+
+### Code Refactoring
+
+* attempt to remove more environment variables ([fcfd47e](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/fcfd47e2f3bc8f9d245b20068d4b2b9ab8297015))
+
 ### [3.8.16](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.15...v3.8.16) (2021-11-27)
 
 
