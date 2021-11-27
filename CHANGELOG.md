@@ -1,3 +1,10 @@
+## [3.9.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.17...v3.9.0) (2021-11-27)
+
+
+### Build System
+
+* remove more environment variables ([885be87](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/885be879f9555615089a9e37b2f89d56774ab982))
+
 ### [3.8.17](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.16...v3.8.17) (2021-11-27)
 
 
