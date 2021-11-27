@@ -1,3 +1,10 @@
+### [3.7.14](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.13...v3.7.14) (2021-11-27)
+
+
+### Tests
+
+* test proper tags ([3649856](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/364985623f862ef72fc774a9ca284f21067429ad))
+
 ### [3.7.13](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.12...v3.7.13) (2021-11-27)
 
 
