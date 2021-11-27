@@ -1,3 +1,10 @@
+### [3.8.15](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.14...v3.8.15) (2021-11-27)
+
+
+### Tests
+
+* remove shell ([7b60c8e](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/7b60c8e3802e26eefab70b10a774e24f2871fa8d))
+
 ### [3.8.14](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.13...v3.8.14) (2021-11-27)
 
 
