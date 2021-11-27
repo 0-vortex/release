@@ -1,3 +1,10 @@
+## [3.15.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.14.0...v3.15.0) (2021-11-27)
+
+
+### Features
+
+* reimplement release contributions, hopefully ([47a555b](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/47a555b59e66f1ac75f3c0cb713faae92ceb05c9))
+
 ## [3.14.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.13.0...v3.14.0) (2021-11-27)
 
 
