@@ -27,6 +27,8 @@ try {
   console.log(error);
 }
 
+console.log(process.env);
+
 plugins.push([
   "@semantic-release/commit-analyzer", {
     "preset": "conventionalcommits",
@@ -133,12 +135,16 @@ try {
   console.error(err);
 }
 
+const successCmd = `
+echo 'RELEASE_TAG=v\${nextRelease.version}' >> $GITHUB_ENV
+echo 'RELEASE_VERSION=\${nextRelease.version}' >> $GITHUB_ENV
+echo '::set-output name=RELEASE_TAG::v\${nextRelease.version}'
+echo '::set-output name=RELEASE_VERSION::\${nextRelease.version}'
+`;
+
 plugins.push([
   "@semantic-release/exec", {
-    "successCmd": `
-      echo 'RELEASE_TAG=v\${nextRelease.version}' >> $GITHUB_ENV
-      echo 'RELEASE_VERSION=\${nextRelease.version}' >> $GITHUB_ENV
-    `
+    successCmd
   }
 ]);
 
