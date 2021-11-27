@@ -1,3 +1,11 @@
+### [3.15.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.15.0...v3.15.1) (2021-11-27)
+
+
+### Bug Fixes
+
+* add correct author and commiter information without setting any defaults ([bc24e47](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/bc24e47ee053369e3432be90f06b3b158c8d8897))
+* remove async from execa ([38968d1](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/38968d112a1d116c7c14000289de64eb94c27d24))
+
 ## [3.15.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.14.0...v3.15.0) (2021-11-27)
 
 
