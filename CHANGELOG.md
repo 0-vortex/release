@@ -1,3 +1,10 @@
+### [3.8.13](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.12...v3.8.13) (2021-11-27)
+
+
+### Tests
+
+* optimize import paths ([341503c](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/341503c78e7f166e0d6790474765f7df3c20a0d2))
+
 ### [3.8.12](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.11...v3.8.12) (2021-11-27)
 
 
