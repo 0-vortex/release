@@ -1,3 +1,10 @@
+## [3.14.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.13.0...v3.14.0) (2021-11-27)
+
+
+### Features
+
+* get proper commit authors ([f416bd0](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/f416bd01d56299ccdb6a65182b68c89a38c45906))
+
 ## [3.13.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.12.0...v3.13.0) (2021-11-27)
 
 
