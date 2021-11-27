@@ -1,3 +1,10 @@
+## [3.18.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.17.0...v3.18.0) (2021-11-27)
+
+
+### Features
+
+* conditionally load github action outputs ([a380942](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/a380942c7f02883e372b67a1a18cae16c12d1c88))
+
 ## [3.17.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.16.2...v3.17.0) (2021-11-27)
 
 
