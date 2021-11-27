@@ -28,6 +28,7 @@
     "@semantic-release/npm": "^8.0.3",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "conventional-changelog-conventionalcommits": "^4.6.1",
+    "execa": "^6.0.0",
     "semantic-release": "^18.0.1",
     "semantic-release-docker-mini": "^1.2.3"
   },

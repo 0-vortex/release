@@ -1,6 +1,8 @@
 const { existsSync } = require('fs');
+const execa = require('execa');
 
 const {
+  GITHUB_SHA,
   GITHUB_REPOSITORY_OWNER,
   GITHUB_REPOSITORY,
   GITHUB_TOKEN,
@@ -10,7 +12,10 @@ const {
   GIT_COMMITTER_EMAIL,
 } = process.env;
 
-console.log(process.env.GITHUB_SHA);
+console.log(`GITHUB_SHA: ${GITHUB_SHA}`);
+
+const authorName = await execa('git', ['log', '-1', '--pretty=format:"%an"', GITHUB_SHA], {cwd});
+console.log(authorName);
 
 !GIT_COMMITTER_NAME && (process.env.GIT_COMMITTER_NAME = "open-sauced[bot]");
 !GIT_COMMITTER_EMAIL && (process.env.GIT_COMMITTER_EMAIL = "63161813+open-sauced[bot]@users.noreply.github.com");
