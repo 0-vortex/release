@@ -10,6 +10,8 @@ const {
   DOCKER_PASSWORD,
   GIT_COMMITTER_NAME,
   GIT_COMMITTER_EMAIL,
+  GIT_AUTHOR_NAME,
+  GIT_AUTHOR_EMAIL,
 } = process.env;
 
 const plugins = [];
@@ -17,8 +19,10 @@ const plugins = [];
 console.log(`GITHUB_SHA: ${GITHUB_SHA}`);
 
 (async () => {
-  const result = await execa('git', ['log', '-1', '--pretty=format:"%an"', GITHUB_SHA]);
-  console.log(result);
+  const { stdout: authorName } = await execa('git', ['log', '-1', '--pretty=format:%an', GITHUB_SHA]);
+  const { stdout: authorEmail } = await execa('git', ['log', '-1', '--pretty=format:%ae', GITHUB_SHA]);
+  console.log(`authorName: ${authorName}`);
+  console.log(`authorEmail: ${authorEmail}`);
 })();
 
 !GIT_COMMITTER_NAME && (process.env.GIT_COMMITTER_NAME = "open-sauced[bot]");
