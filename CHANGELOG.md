@@ -1,3 +1,10 @@
+### [3.8.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.2...v3.8.3) (2021-11-27)
+
+
+### Code Refactoring
+
+* check current working directory ([6225e7f](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/6225e7f2c8478b0f7270d05b5fe17d0e11eefda3))
+
 ### [3.8.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.1...v3.8.2) (2021-11-27)
 
 
