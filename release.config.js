@@ -117,7 +117,7 @@ try {
         "registry": "ghcr.io",
         "publishChannelTag": true,
       }
-    ])
+    ]);
   }
 } catch(err) {
   console.error(err);
@@ -125,7 +125,8 @@ try {
 
 plugins.push([
   "@semantic-release/exec", {
-    "verifyConditionsCmd": "printenv",
+    // "verifyConditionsCmd": "echo '${GITHUB_SHA}'",
+    "verifyConditionsCmd": "echo $(git log -1 --pretty=format:\"%an\" ${GITHUB_SHA})",
     "successCmd": "echo 'SEMVER_VERSION=${nextRelease.version}' >> $GITHUB_ENV"
   }
 ]);
