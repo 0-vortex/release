@@ -1,3 +1,15 @@
+## [3.10.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.9.2...v3.10.0) (2021-11-27)
+
+
+### Features
+
+* test execution capability ([2b82ebf](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/2b82ebfb0159f76c3949a395b9dfe00f7a97deed))
+
+
+### Tests
+
+* switch to bash for author name ([c8f46d2](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/c8f46d28624aba049282a5022e5c1d323c6a0f5a))
+
 ### [3.9.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.9.1...v3.9.2) (2021-11-27)
 
 
