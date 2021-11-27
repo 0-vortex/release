@@ -1,3 +1,10 @@
+### [3.16.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.16.1...v3.16.2) (2021-11-27)
+
+
+### Bug Fixes
+
+* correct bash multiline string ([90be332](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/90be332dac9db38f6a7733389da32f4c9a8e81b6))
+
 ### [3.16.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.16.0...v3.16.1) (2021-11-27)
 
 
