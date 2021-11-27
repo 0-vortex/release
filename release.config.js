@@ -56,6 +56,31 @@ plugins.push([
   }
 ]);
 
+plugins.push([
+  "@semantic-release/git", {
+    "assets": [
+      "CHANGELOG.md",
+      "package.json",
+      "package-lock.json",
+      "npm-shrinkwrap.json",
+      "public/diagram.svg"
+    ],
+    "message": `chore(release): \${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}`
+  }
+]);
+
+plugins.push([
+  "@semantic-release/github", {
+    "addReleases": 'bottom',
+    "assets": [
+      {
+        "path": "pack/*.tgz",
+        "label": "Static distribution"
+      }
+    ]
+  }
+]);
+
 try {
   const dockerExists = existsSync('./Dockerfile');
   console.log(`dockerExists: ${dockerExists}`);
@@ -86,31 +111,6 @@ try {
 // console.log(`process.env.DISABLE_DOCKER=${process.env.DISABLE_DOCKER}`);
 // console.log(process.cwd());
 // console.log(process.env.GITHUB_WORKSPACE);
-
-plugins.push([
-  "@semantic-release/git", {
-    "assets": [
-      "CHANGELOG.md",
-      "package.json",
-      "package-lock.json",
-      "npm-shrinkwrap.json",
-      "public/diagram.svg"
-    ],
-    "message": `chore(release): \${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}`
-  }
-]);
-
-plugins.push([
-  "@semantic-release/github", {
-    "addReleases": 'bottom',
-    "assets": [
-      {
-        "path": "pack/*.tgz",
-        "label": "Static distribution"
-      }
-    ]
-  }
-]);
 
 plugins.push([
   "@semantic-release/exec", {
