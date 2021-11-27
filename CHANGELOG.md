@@ -1,3 +1,10 @@
+### [3.7.17](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.16...v3.7.17) (2021-11-27)
+
+
+### Tests
+
+* final version of fixed docker plugin ([944d25b](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/944d25b65a11885eb7e735a3d00886701d57eeb6))
+
 ### [3.7.16](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.15...v3.7.16) (2021-11-27)
 
 
