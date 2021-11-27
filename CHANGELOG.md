@@ -1,3 +1,10 @@
+### [3.8.9](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.8...v3.8.9) (2021-11-27)
+
+
+### Bug Fixes
+
+* correct extends path ([af1a644](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/af1a64416e4eca2919d9a135b5ffc995dfa7eac6))
+
 ### [3.8.8](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.8.7...v3.8.8) (2021-11-27)
 
 
