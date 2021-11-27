@@ -1,3 +1,15 @@
+## [3.8.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.19...v3.8.0) (2021-11-27)
+
+
+### Build System
+
+* destroy all coding standards ([a560b84](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/a560b84753013a87a023dfa0abf25e060c7b8f47))
+
+
+### Tests
+
+* switch fs to sync in semantic config ([b9c4265](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/b9c426526d406f8d629b5c10ee63e0e97915c459))
+
 ### [3.7.19](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.18...v3.7.19) (2021-11-27)
 
 
