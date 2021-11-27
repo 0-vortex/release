@@ -1,3 +1,15 @@
+## [3.12.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.11.3...v3.12.0) (2021-11-27)
+
+
+### Tests
+
+* try again with variables ([cee8b50](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/cee8b50078559c739db093f7ae8af912eff2104f))
+
+
+### Build System
+
+* running out of options here ([969a5d5](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/969a5d51ccc9c5b095c4797c9b76dc57b2d695cc))
+
 ### [3.11.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.11.2...v3.11.3) (2021-11-27)
 
 
