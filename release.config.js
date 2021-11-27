@@ -20,6 +20,7 @@ echo 'RELEASE_VERSION=\${nextRelease.version}' >> $GITHUB_ENV
 echo '::set-output name=release-tag::v\${nextRelease.version}'
 echo '::set-output name=release-version::\${nextRelease.version}'
 `;
+const [owner, repo] = String(GITHUB_REPOSITORY).toLowerCase().split('/');
 
 !GIT_COMMITTER_NAME && (process.env.GIT_COMMITTER_NAME = "open-sauced[bot]");
 !GIT_COMMITTER_EMAIL && (process.env.GIT_COMMITTER_EMAIL = "63161813+open-sauced[bot]@users.noreply.github.com");
@@ -87,6 +88,33 @@ plugins.push([
   }
 ]);
 
+try {
+  const actionExists = existsSync('./action.yml');
+
+  if (actionExists) {
+    plugins.push([
+      "@google/semantic-release-replace-plugin", {
+        "replacements": [{
+          "files": [
+            "action.yml"
+          ],
+          "from": `image: 'docker://ghcr.io/${owner}/${repo}:.*'`,
+          "to": `image: 'docker://ghcr.io/${owner}/${repo}:\${nextRelease.version}'`,
+          "results": [{
+            "file": "action.yml",
+            "hasChanged": true,
+            "numMatches": 1,
+            "numReplacements": 1
+          }],
+          "countMatches": true
+        }]
+      }
+    ]);
+  }
+} catch(err) {
+  console.error("Fatal lstat on action.yml: ", err);
+}
+
 plugins.push([
   "@semantic-release/git", {
     "assets": [
@@ -94,7 +122,8 @@ plugins.push([
       "package.json",
       "package-lock.json",
       "npm-shrinkwrap.json",
-      "public/diagram.svg"
+      "public/diagram.svg",
+      "action.yml"
     ],
     "message": `chore(release): \${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}`
   }
@@ -116,8 +145,6 @@ try {
   const dockerExists = existsSync('./Dockerfile');
 
   if (dockerExists) {
-    const [owner, repo] = String(GITHUB_REPOSITORY).toLowerCase().split('/');
-
     !DOCKER_USERNAME && (process.env.DOCKER_USERNAME = GITHUB_REPOSITORY_OWNER);
     !DOCKER_PASSWORD && (process.env.DOCKER_PASSWORD = GITHUB_TOKEN);
 
@@ -136,7 +163,7 @@ try {
     ]);
   }
 } catch(err) {
-  console.error(err);
+  console.error("Fatal lstat on Dockerfile: ", err);
 }
 
 if (process.env.GITHUB_ACTIONS === "true") {
