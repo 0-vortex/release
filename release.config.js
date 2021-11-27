@@ -56,8 +56,8 @@ plugins.push([
   }
 ]);
 
-console.log(process.env.DISABLE_DOCKER);
-fs.access('./Dockerfile', fs.F_OK, (err) => {
+console.log(`process.env.DISABLE_DOCKER=${process.env.DISABLE_DOCKER}`);
+await fs.access('./Dockerfile', fs.F_OK, (err) => {
   if (err) {
     console.error(err)
 
@@ -68,7 +68,7 @@ fs.access('./Dockerfile', fs.F_OK, (err) => {
   //file exists
   process.env.DISABLE_DOCKER = "false";
 });
-console.log(process.env.DISABLE_DOCKER);
+console.log(`process.env.DISABLE_DOCKER=${process.env.DISABLE_DOCKER}`);
 
 if (!process.env.DISABLE_DOCKER) {
   const [owner, repo] = String(process.env.GITHUB_REPOSITORY).toLowerCase().split('/');
