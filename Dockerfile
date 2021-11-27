@@ -1,8 +1,5 @@
 FROM node:16-alpine
 
-ENV GIT_COMMITTER_NAME="open-sauced[bot]"
-ENV GIT_COMMITTER_EMAIL="63161813+open-sauced[bot]@users.noreply.github.com"
-
 RUN apk --update --no-cache add git git-lfs jq openssh
 
 COPY package.json /

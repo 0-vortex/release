@@ -6,7 +6,12 @@ const {
   GITHUB_TOKEN,
   DOCKER_USERNAME,
   DOCKER_PASSWORD,
+  GIT_COMMITTER_NAME,
+  GIT_COMMITTER_EMAIL,
 } = process.env;
+
+!GIT_COMMITTER_NAME && (process.env.GIT_COMMITTER_NAME = "open-sauced[bot]");
+!GIT_COMMITTER_EMAIL && (process.env.GIT_COMMITTER_EMAIL = "63161813+open-sauced[bot]@users.noreply.github.com");
 
 const plugins = [];
 
@@ -97,9 +102,6 @@ try {
 
     !DOCKER_USERNAME && (process.env.DOCKER_USERNAME = GITHUB_REPOSITORY_OWNER);
     !DOCKER_PASSWORD && (process.env.DOCKER_PASSWORD = GITHUB_TOKEN);
-
-    console.log(process.env.DOCKER_USERNAME);
-    console.log(process.env.DOCKER_PASSWORD);
 
     plugins.push([
       "semantic-release-docker-mini",
