@@ -1,3 +1,12 @@
+### [3.7.12](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.11...v3.7.12) (2021-11-27)
+
+
+### Bug Fixes
+
+* adjust the semantic release docker plugin temporarily ([e870dbe](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/e870dbea4d86b4f478f0d55cdecadd9a75337beb))
+* correct semantic docker temporary patch ([5b9e2ce](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/5b9e2cea4e9618d72f2dad1fa3e239023d42b790))
+* remove failing preinstall scripts package ([cc5722b](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/cc5722beb583150928d1c722eeab7870d4c2510e))
+
 ### [3.7.11](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.10...v3.7.11) (2021-11-23)
 
 
