@@ -67,7 +67,7 @@ try {
 }
 console.log(`process.env.DISABLE_DOCKER=${process.env.DISABLE_DOCKER}`);
 
-if (!process.env.DISABLE_DOCKER) {
+if (!process.env.DISABLE_DOCKER !== "true") {
   const [owner, repo] = String(process.env.GITHUB_REPOSITORY).toLowerCase().split('/');
 
   plugins.push([
