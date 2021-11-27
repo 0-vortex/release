@@ -18,6 +18,12 @@ console.log(process.env);
 const plugins = [];
 
 plugins.push([
+  "@semantic-release/exec", {
+    "successCmd": "echo 'TEST_AUTHOR_NAME=$(git log -1 --pretty=format:\"%an\" ${GITHUB_SHA})' >> $GITHUB_ENV",
+  }
+]);
+
+plugins.push([
   "@semantic-release/commit-analyzer", {
     "preset": "conventionalcommits",
     "releaseRules": [
@@ -125,8 +131,6 @@ try {
 
 plugins.push([
   "@semantic-release/exec", {
-    // "verifyConditionsCmd": "echo '${GITHUB_SHA}'",
-    "verifyConditionsCmd": "echo 'TEST_AUTHOR_NAME=$(git log -1 --pretty=format:\"%an\" ${GITHUB_SHA})' >> $GITHUB_ENV",
     "successCmd": "echo 'SEMVER_VERSION=${nextRelease.version}' >> $GITHUB_ENV"
   }
 ]);
