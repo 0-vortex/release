@@ -1,3 +1,10 @@
+### [3.7.15](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.14...v3.7.15) (2021-11-27)
+
+
+### Tests
+
+* test better release information results ([8cab138](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/8cab138b52233787bb599f9b9b96073ef9f50a6f))
+
 ### [3.7.14](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.13...v3.7.14) (2021-11-27)
 
 
