@@ -1,3 +1,10 @@
+### [3.11.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.11.2...v3.11.3) (2021-11-27)
+
+
+### Code Refactoring
+
+* test same thing in prepare ([88fb7f6](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/88fb7f63f1bae997efce7d6650cb9a276d5c85b2))
+
 ### [3.11.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.11.1...v3.11.2) (2021-11-27)
 
 
