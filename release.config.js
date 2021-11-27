@@ -17,8 +17,8 @@ const {
 const plugins = [];
 
 try {
-  const { stdout: authorName } = await execaSync('git', ['log', '-1', '--pretty=format:%an', GITHUB_SHA]);
-  const { stdout: authorEmail } = await execaSync('git', ['log', '-1', '--pretty=format:%ae', GITHUB_SHA]);
+  const { stdout: authorName } = execaSync('git', ['log', '-1', '--pretty=format:%an', GITHUB_SHA]);
+  const { stdout: authorEmail } = execaSync('git', ['log', '-1', '--pretty=format:%ae', GITHUB_SHA]);
   authorName && !GIT_AUTHOR_NAME && (process.env.GIT_AUTHOR_NAME = `${authorName}`);
   authorEmail && !GIT_AUTHOR_EMAIL && (process.env.GIT_AUTHOR_EMAIL = `${authorEmail}`);
 } catch (error) {
