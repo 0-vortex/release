@@ -1,6 +1,7 @@
 const { existsSync } = require('fs');
 const execa = require('execa');
 
+const plugins = [];
 const {
   GITHUB_SHA,
   GITHUB_REPOSITORY_OWNER,
@@ -14,7 +15,8 @@ const {
   GIT_AUTHOR_EMAIL,
 } = process.env;
 
-const plugins = [];
+!GIT_COMMITTER_NAME && (process.env.GIT_COMMITTER_NAME = "open-sauced[bot]");
+!GIT_COMMITTER_EMAIL && (process.env.GIT_COMMITTER_EMAIL = "63161813+open-sauced[bot]@users.noreply.github.com");
 
 try {
   const { stdout: authorName } = execa.sync('git', ['log', '-1', '--pretty=format:%an', GITHUB_SHA]);
@@ -24,11 +26,6 @@ try {
 } catch (error) {
   console.log(error);
 }
-
-!GIT_COMMITTER_NAME && (process.env.GIT_COMMITTER_NAME = "open-sauced[bot]");
-!GIT_COMMITTER_EMAIL && (process.env.GIT_COMMITTER_EMAIL = "63161813+open-sauced[bot]@users.noreply.github.com");
-
-console.log(process.env);
 
 plugins.push([
   "@semantic-release/commit-analyzer", {
@@ -141,9 +138,6 @@ plugins.push([
     "successCmd": "echo 'SEMVER_VERSION=${nextRelease.version}' >> $GITHUB_ENV"
   }
 ]);
-
-console.log(`GIT_AUTHOR_NAME: ${process.env.GIT_AUTHOR_NAME}`);
-console.log(`GIT_AUTHOR_EMAIL: ${process.env.GIT_AUTHOR_EMAIL}`);
 
 module.exports = {
   "branches": [
