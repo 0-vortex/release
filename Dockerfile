@@ -16,4 +16,4 @@ RUN apk add --update make \
 
 ENTRYPOINT ["npx"]
 
-CMD semantic-release --extends $(cat /release.config.js)
+CMD semantic-release --extends /release.config.js
