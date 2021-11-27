@@ -1,3 +1,10 @@
+### [3.7.16](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.15...v3.7.16) (2021-11-27)
+
+
+### Tests
+
+* test correct hub url for most known public registries ([01160ca](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/01160caf7b663b19fe9050a93b85ae0f1355adc9))
+
 ### [3.7.15](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.7.14...v3.7.15) (2021-11-27)
 
 
