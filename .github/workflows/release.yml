@@ -53,7 +53,7 @@ jobs:
   release:
     environment:
       name: production
-      url: https://github.com/${{ github.repository }}/releases/tag/v${{ steps.release.outputs.version }}
+      url: https://github.com/${{ github.repository }}/releases/tag/${{ env.RELEASE_TAG }}
     name: Semantic release
     needs:
       - docker
@@ -89,12 +89,10 @@ jobs:
       - name: "🚀 release"
         id: release
         env:
-          DEBUG: 'semantic-release:*'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npm run semantic-release
-          echo "::set-output name=version::$(cat package.json | jq -r '.version')"
+          npx semantic-release
 
   cleanup:
     name: Cleanup actions

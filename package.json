@@ -39,8 +39,7 @@
   "scripts": {
     "preinstall": "npx @open-sauced/check-engines",
     "prestart": "npx @open-sauced/check-engines",
-    "push": "npx @open-sauced/conventional-commit",
-    "semantic-release": "npx semantic-release"
+    "push": "npx @open-sauced/conventional-commit"
   },
   "publishConfig": {
     "access": "public"
