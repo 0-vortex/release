@@ -1,3 +1,10 @@
+### [3.9.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.9.1...v3.9.2) (2021-11-27)
+
+
+### Continuous Integration
+
+* test last remaining variables ([26765b2](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/26765b23f94fc82bc509984a66d94705dd9f4251))
+
 ### [3.9.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.9.0...v3.9.1) (2021-11-27)
 
 
