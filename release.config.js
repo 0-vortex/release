@@ -1,4 +1,4 @@
-const fs = require('fs');
+import { existsSync } from 'fs';
 
 const plugins = [];
 
@@ -57,34 +57,35 @@ plugins.push([
 ]);
 
 try {
-  if (fs.existsSync('./Dockerfile')) {
-    process.env.DISABLE_DOCKER = undefined;
+  const dockerExists = existsSync('./Dockerfile');
+  console.log(`dockerExists: ${dockerExists}`);
+
+  if (dockerExists) {
+    const [owner, repo] = String(process.env.GITHUB_REPOSITORY).toLowerCase().split('/');
+
+    plugins.push([
+      "semantic-release-docker-mini",
+      {
+        "name": {
+          "registry": `ghcr.io`,
+          "namespace": owner,
+          "repository": repo,
+          "tag": "latest"
+        },
+        "registry": "ghcr.io",
+        "publishChannelTag": true,
+      }
+    ])
   }
+  // if (fs.existsSync('./Dockerfile')) {
+  //   process.env.DISABLE_DOCKER = undefined;
+  // }
 } catch(err) {
   console.error(err);
-  process.env.DISABLE_DOCKER = "true";
 }
-console.log(`process.env.DISABLE_DOCKER=${process.env.DISABLE_DOCKER}`);
-console.log(process.cwd());
-console.log(process.env.GITHUB_WORKSPACE);
-
-if (!process.env.DISABLE_DOCKER !== "true") {
-  const [owner, repo] = String(process.env.GITHUB_REPOSITORY).toLowerCase().split('/');
-
-  plugins.push([
-    "semantic-release-docker-mini",
-    {
-      "name": {
-        "registry": `ghcr.io`,
-        "namespace": owner,
-        "repository": repo,
-        "tag": "latest"
-      },
-      "registry": "ghcr.io",
-      "publishChannelTag": true,
-    }
-  ])
-}
+// console.log(`process.env.DISABLE_DOCKER=${process.env.DISABLE_DOCKER}`);
+// console.log(process.cwd());
+// console.log(process.env.GITHUB_WORKSPACE);
 
 plugins.push([
   "@semantic-release/git", {
