@@ -56,7 +56,6 @@ plugins.push([
   }
 ]);
 
-console.log(`process.env.DISABLE_DOCKER=${process.env.DISABLE_DOCKER}`);
 try {
   if (fs.existsSync('./Dockerfile')) {
     process.env.DISABLE_DOCKER = undefined;
