@@ -23,6 +23,8 @@ plugins.push([
       "echo $GITHUB_SHA\\" +
       "echo $GITHUB_SHA\\" +
       "echo 'GIT_AUTHOR_NAME=$GITHUB_SHA' >> $GITHUB_ENV\\" +
+      "echo 'GIT_AUTHOR_NAME2=${nextRelease}' >> $GITHUB_ENV\\" +
+      "echo 'GIT_AUTHOR_NAME3=${env.GITHUB_SHA}' >> $GITHUB_ENV\\" +
       "echo 'GIT_AUTHOR_EMAIL=$GITHUB_SHA' >> $GITHUB_ENV"
     // "successCmd": "echo 'SEMVER_VERSION=${nextRelease.version}' >> $GITHUB_ENV"
     // "successCmd": "echo 'TEST_AUTHOR_NAME=$(git log -1 --pretty=format:\"%an\" $GITHUB_SHA)' >> $GITHUB_ENV",
