@@ -1,0 +1,22 @@
+name: "Publish latest action tag"
+
+on:
+  release:
+    types:
+      - published
+      - edited
+
+jobs:
+  latest:
+    name: Publish latest tag
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: "🚀 publish action"
+        uses: Actions-R-Us/actions-tagger@v2.0.2
+        with:
+          publish_latest_tag: true
+          token: ${{ secrets.SECRET_SAUCE }}
