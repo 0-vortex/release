@@ -1,3 +1,15 @@
+## [3.21.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.20.3...v3.21.0) (2021-12-01)
+
+
+### Features
+
+* test patch add channel from eclass fork ([d7da5de](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/d7da5defb0d209ffdf854a94ff3eee7944aac46f))
+
+
+### Bug Fixes
+
+* correct module usage ([4198b18](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/4198b1892afd67d3aecf587d514a2334b779d799))
+
 ### [3.20.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.20.2...v3.20.3) (2021-12-01)
 
 
