@@ -1,3 +1,10 @@
+### [3.21.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.21.0...v3.21.1) (2021-12-01)
+
+
+### Styles
+
+* correct display of latest docker release tag ([f15d892](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/f15d892fff9a3c8db264909d280b21956ef2f5a0))
+
 ## [3.21.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.20.3...v3.21.0) (2021-12-01)
 
 
