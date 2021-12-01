@@ -1,3 +1,10 @@
+### [3.20.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.20.1...v3.20.2) (2021-12-01)
+
+
+### Bug Fixes
+
+* update docker plugin environment variables ([9829ea7](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/9829ea7d3f46d600699bb78a22b6217e4c5205e6))
+
 ### [3.20.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.20.0...v3.20.1) (2021-12-01)
 
 
