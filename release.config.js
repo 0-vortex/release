@@ -142,18 +142,17 @@ try {
 
   if (dockerExists) {
     plugins.push([
-      "semantic-release-docker-mini",
+      "@eclass/semantic-release-docker",
       {
-        "name": {
-          "registry": `ghcr.io`,
-          "namespace": owner,
-          "repository": repo,
-          "tag": "latest"
-        },
-        "registry": "ghcr.io",
-        "user": "GITHUB_REPOSITORY_OWNER",
-        "password": "GITHUB_TOKEN",
-        "publishChannelTag": true,
+        "baseImageName": `${owner}/${repo}`,
+        "registries": [
+          {
+            "url": "ghcr.io",
+            "imageName": `ghcr.io/${owner}/${repo}`,
+            "user": "GITHUB_REPOSITORY_OWNER",
+            "password": "GITHUB_TOKEN"
+          }
+        ]
       }
     ]);
   }
