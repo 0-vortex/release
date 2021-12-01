@@ -1,3 +1,21 @@
+## [3.20.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.19.0...v3.20.0) (2021-12-01)
+
+
+### Code Refactoring
+
+* reorder dependencies ([30ba1a4](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/30ba1a460aed55966a7061c5d4a93f151118f3b1))
+
+
+### Build System
+
+* clean up dependencies ([abe9495](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/abe94953e727c07af1987203a2f34147cfc44c29))
+
+
+### Continuous Integration
+
+* update latest action version tags again ([7f95771](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/7f95771e6a45a2ec10a497edf91c01126a39003d))
+* use marketplace tag update ([06baaa2](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/06baaa2cf2510787866d4b6f74766c64abb72ccc))
+
 ## [3.19.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.18.0...v3.19.0) (2021-11-27)
 
 
