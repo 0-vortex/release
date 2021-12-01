@@ -142,7 +142,7 @@ try {
 
   if (dockerExists) {
     plugins.push([
-      "@eclass/semantic-release-docker",
+      "eclass-docker-fork",
       {
         "baseImageName": `${owner}/${repo}`,
         "registries": [
