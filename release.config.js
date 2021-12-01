@@ -4,10 +4,7 @@ const execa = require('execa');
 const plugins = [];
 const {
   GITHUB_SHA,
-  GITHUB_REPOSITORY_OWNER,
   GITHUB_REPOSITORY,
-  DOCKER_USERNAME,
-  DOCKER_PASSWORD,
   GIT_COMMITTER_NAME,
   GIT_COMMITTER_EMAIL,
   GIT_AUTHOR_NAME,
@@ -144,9 +141,6 @@ try {
   const dockerExists = existsSync('./Dockerfile');
 
   if (dockerExists) {
-    !DOCKER_USERNAME && (process.env.DOCKER_USERNAME = GITHUB_REPOSITORY_OWNER);
-    !DOCKER_PASSWORD && (process.env.DOCKER_PASSWORD = process.env.GITHUB_TOKEN);
-
     plugins.push([
       "semantic-release-docker-mini",
       {
@@ -157,6 +151,8 @@ try {
           "tag": "latest"
         },
         "registry": "ghcr.io",
+        "user": "GITHUB_REPOSITORY_OWNER",
+        "password": "GITHUB_TOKEN",
         "publishChannelTag": true,
       }
     ]);
