@@ -1,3 +1,10 @@
+### [3.20.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.20.2...v3.20.3) (2021-12-01)
+
+
+### Tests
+
+* use eclass docker plugin for dockerode ([7a7dd71](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/7a7dd717f35adab4958b62b8a6b24b05b934334d))
+
 ### [3.20.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.20.1...v3.20.2) (2021-12-01)
 
 
