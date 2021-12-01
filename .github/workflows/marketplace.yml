@@ -8,15 +8,15 @@ on:
 
 jobs:
   latest:
-    name: Publish latest tag
+    name: Update major version tag
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
-          persist-credentials: false
+          ref: ${{ github.ref }}
 
       - name: "🚀 publish action"
-        uses: Actions-R-Us/actions-tagger@v2.0.2
+        uses: Actions-R-Us/actions-tagger@v2
         with:
-          publish_latest_tag: true
-          token: ${{ secrets.SECRET_SAUCE }}
+          publish_latest_tag: false
+          prefer_branch_releases: false
