@@ -6,7 +6,6 @@ const {
   GITHUB_SHA,
   GITHUB_REPOSITORY_OWNER,
   GITHUB_REPOSITORY,
-  GITHUB_TOKEN,
   DOCKER_USERNAME,
   DOCKER_PASSWORD,
   GIT_COMMITTER_NAME,
@@ -146,7 +145,7 @@ try {
 
   if (dockerExists) {
     !DOCKER_USERNAME && (process.env.DOCKER_USERNAME = GITHUB_REPOSITORY_OWNER);
-    !DOCKER_PASSWORD && (process.env.DOCKER_PASSWORD = GITHUB_TOKEN);
+    !DOCKER_PASSWORD && (process.env.DOCKER_PASSWORD = process.env.GITHUB_TOKEN);
 
     plugins.push([
       "semantic-release-docker-mini",

@@ -1,4 +1,4 @@
-name: "Publish latest action tag"
+name: "Action major version tag"
 
 on:
   release:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   latest:
-    name: Update major version tag
+    name: Update action tags
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
