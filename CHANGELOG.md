@@ -1,3 +1,10 @@
+### [3.20.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.20.0...v3.20.1) (2021-12-01)
+
+
+### Bug Fixes
+
+* correct secure variable transport ([708d65b](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/708d65bb0c194fdbf44335c969069717ce1cc924))
+
 ## [3.20.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.19.0...v3.20.0) (2021-12-01)
 
 
