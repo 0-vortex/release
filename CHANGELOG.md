@@ -1,3 +1,10 @@
+## [3.22.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.21.1...v3.22.0) (2021-12-01)
+
+
+### Build System
+
+* use proper working docker fork now ([e6cac65](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/e6cac6580b1800a36779b9a3e55db872d14a082f))
+
 ### [3.21.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.21.0...v3.21.1) (2021-12-01)
 
 
