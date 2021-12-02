@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [3.26.2-beta.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.2-beta.2...v3.26.2-beta.3) (2021-12-02)
+
+
+### Tests
+
+* dump better baseImageTag ([873b48a](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/873b48a7ab037fce6ba146b34e2df0022853cb05))
+
 ### [3.26.2-beta.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.2-beta.1...v3.26.2-beta.2) (2021-12-02)
 
 
