@@ -1,6 +1,6 @@
 {
   "name": "open-sauced-semantic-config-test",
-  "version": "3.0.0-beta.1",
+  "version": "3.26.1",
   "license": "MIT",
   "files": [
     "release.config.js"
@@ -17,25 +17,31 @@
     "url": "git+ssh://git@github.com/0-vortex/open-sauced-semantic-config-test.git"
   },
   "peerDependencies": {
-    "semantic-release": "^18.0.0"
+    "semantic-release": ">=18.0.0-beta.1"
   },
   "dependencies": {
-    "@semantic-release-plus/docker": "^3.0.1",
-    "@semantic-release/changelog": "^6.0.0",
-    "@semantic-release/git": "^10.0.0",
-    "conventional-changelog-conventionalcommits": "^4.6.1"
+    "@google/semantic-release-replace-plugin": "^1.1.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/exec": "^6.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.2",
+    "@semantic-release/npm": "^8.0.3",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "conventional-changelog-conventionalcommits": "^4.6.1",
+    "eclass-docker-fork": "^1.2.2",
+    "execa": "^5.1.1",
+    "semantic-release": "^18.0.1",
+    "semantic-release-license": "^1.0.3"
   },
   "devDependencies": {
-    "@open-sauced/check-engines": "^1.0.0",
-    "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0",
-    "semantic-release": "^18.0.0"
+    "@open-sauced/check-engines": "^1.2.0",
+    "@open-sauced/conventional-commit": "^1.0.1"
   },
   "scripts": {
     "preinstall": "npx @open-sauced/check-engines",
     "prestart": "npx @open-sauced/check-engines",
-    "push": "npx cz",
-    "semantic-release": "npx semantic-release"
+    "push": "npx @open-sauced/conventional-commit"
   },
   "publishConfig": {
     "access": "public"
