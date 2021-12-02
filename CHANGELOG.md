@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [3.26.2-beta.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.2-beta.1...v3.26.2-beta.2) (2021-12-02)
+
+
+### Tests
+
+* try live beta context ([9107fc6](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/9107fc628ffc0ff5ec7184a86a7feee0edbed7cf))
+
 ### [3.26.2-beta.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.1...v3.26.2-beta.1) (2021-12-02)
 
 
