@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [3.24.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.24.2...v3.24.3) (2021-12-02)
+
+
+### Styles
+
+* add final changelog style template ([43c5e7a](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/43c5e7a6c2976d26d7c21926e2304bc3857df94d))
+
 ### [3.24.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.24.1...v3.24.2) (2021-12-02)
 
 
