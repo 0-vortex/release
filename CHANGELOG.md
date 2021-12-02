@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [3.26.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.0...v3.26.1) (2021-12-02)
+
+
+### Tests
+
+* expose docker channel information ([53227b4](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/53227b440d7c27334b970d461a4a37391227addb))
+
 ## [3.26.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.25.1...v3.26.0) (2021-12-02)
 
 
