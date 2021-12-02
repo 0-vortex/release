@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [3.24.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.24.1...v3.24.2) (2021-12-02)
+
+
+### Bug Fixes
+
+* test emoji changelog template ([92cbef9](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/92cbef98f585db153e8f646daeecb94614bb77c3))
+
 ### [3.24.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.24.0...v3.24.1) (2021-12-02)
 
 
