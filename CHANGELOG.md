@@ -1,3 +1,10 @@
+## [3.23.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.22.0...v3.23.0) (2021-12-02)
+
+
+### Features
+
+* implement license update function ([99f229f](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/99f229f2511117c9597597896b26b861e8567030))
+
 ## [3.22.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.21.1...v3.22.0) (2021-12-01)
 
 
