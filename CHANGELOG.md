@@ -12,13 +12,6 @@
 
 * add better badges for changelog and styling ([2bc7543](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/2bc754318c5095207e9cef2a419a4d0081d7d5c2))
 
-# 0-vortex/open-sauced-semantic-config-test changelog
-
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-[![Semantic Versioning](https://img.shields.io/badge/semantic-versioning-333333.svg?style=flat-square)](https://semver.org)
-
-> All notable changes to this project will be documented in this file
-
 ## [3.24.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.23.0...v3.24.0) (2021-12-02)
 
 
