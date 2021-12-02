@@ -111,9 +111,15 @@ try {
   console.error("Fatal lstat on action.yml: ", err);
 }
 
+plugins.push(["semantic-release-license"]);
+
 plugins.push([
   "@semantic-release/git", {
     "assets": [
+      'LICENSE',
+      'LICENSE.md',
+      'COPYING',
+      'COPYING.md',
       "CHANGELOG.md",
       "package.json",
       "package-lock.json",
