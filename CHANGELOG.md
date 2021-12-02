@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [3.25.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.24.3...v3.25.0) (2021-12-02)
+
+
+### Features
+
+* add unified badges for changelog generation ([1932597](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/1932597b8eb8b7ed06e946b5f49c2bccbfb9a631))
+
 ### [3.24.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.24.2...v3.24.3) (2021-12-02)
 
 
