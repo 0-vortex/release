@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [3.26.2-beta.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.1...v3.26.2-beta.1) (2021-12-02)
+
+
+### Tests
+
+* try running beta build for docker ([a85a826](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/a85a826a21e432a553d401ec0be913f4272668fb))
+
 ### [3.26.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.0...v3.26.1) (2021-12-02)
 
 
