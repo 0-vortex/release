@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [3.25.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.25.0...v3.25.1) (2021-12-02)
+
+
+### Styles
+
+* switch badge display to lowercase for readability ([2abbf72](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/2abbf72a256c9dcf5b509a529b77e8af370f4469))
+
 ## [3.25.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.24.3...v3.25.0) (2021-12-02)
 
 
