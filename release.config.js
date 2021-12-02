@@ -76,7 +76,16 @@ plugins.push([
   }
 ]);
 
-plugins.push("@semantic-release/changelog");
+plugins.push([
+  "@semantic-release/changelog", {
+    "changelogTitle": `# ${owner}/${repo} changelog
+
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![Semantic Versioning](https://img.shields.io/badge/semantic-versioning-333333.svg?style=flat-square)](https://semver.org)
+
+> All notable changes to this project will be documented in this file`
+  }
+]);
 
 plugins.push([
   "@semantic-release/npm", {
@@ -176,7 +185,10 @@ if (process.env.GITHUB_ACTIONS === "true") {
 
 module.exports = {
   "branches": [
+    "+([0-9])?(.{+([0-9]),x}).x",
     "main",
+    "next",
+    "next-major",
     {
       name: 'beta',
       prerelease: true
