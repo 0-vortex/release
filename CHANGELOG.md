@@ -5,6 +5,41 @@
 
 > All notable changes to this project will be documented in this file
 
+### [3.26.2-beta.5](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.2-beta.4...v3.26.2-beta.5) (2021-12-03)
+
+
+### Tests
+
+* test rescoped prepare tag condition ([58c6943](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/58c6943a3c35c2daeff861dc90306a10d1e0a399))
+
+### [3.26.2-beta.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.2-beta.3...v3.26.2-beta.4) (2021-12-02)
+
+
+### Tests
+
+* try proper docker channel now ([cf18746](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/cf18746dec224a0d5c65311bfe288b764f78a031))
+
+### [3.26.2-beta.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.2-beta.2...v3.26.2-beta.3) (2021-12-02)
+
+
+### Tests
+
+* dump better baseImageTag ([873b48a](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/873b48a7ab037fce6ba146b34e2df0022853cb05))
+
+### [3.26.2-beta.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.2-beta.1...v3.26.2-beta.2) (2021-12-02)
+
+
+### Tests
+
+* try live beta context ([9107fc6](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/9107fc628ffc0ff5ec7184a86a7feee0edbed7cf))
+
+### [3.26.2-beta.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.1...v3.26.2-beta.1) (2021-12-02)
+
+
+### Tests
+
+* try running beta build for docker ([a85a826](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/a85a826a21e432a553d401ec0be913f4272668fb))
+
 ### [3.26.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.0...v3.26.1) (2021-12-02)
 
 
