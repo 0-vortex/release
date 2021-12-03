@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [3.26.2-beta.5](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.2-beta.4...v3.26.2-beta.5) (2021-12-03)
+
+
+### Tests
+
+* test rescoped prepare tag condition ([58c6943](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/58c6943a3c35c2daeff861dc90306a10d1e0a399))
+
 ### [3.26.2-beta.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.2-beta.3...v3.26.2-beta.4) (2021-12-02)
 
 
