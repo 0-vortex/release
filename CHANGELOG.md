@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [3.26.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.3...v3.26.4) (2021-12-03)
+
+
+### Styles
+
+* remove console logs from docker mini plugin ([57f64d2](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/57f64d2712e97b02bd9115018a8cb7997f17b5d3))
+
 ### [3.26.4-beta.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.3...v3.26.4-beta.1) (2021-12-03)
 
 
