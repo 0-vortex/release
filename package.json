@@ -1,6 +1,6 @@
 {
   "name": "open-sauced-semantic-config-test",
-  "version": "3.26.2-beta.5",
+  "version": "3.26.2",
   "license": "MIT",
   "files": [
     "release.config.js"
