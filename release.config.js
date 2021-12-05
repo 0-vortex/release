@@ -20,7 +20,7 @@ echo '::set-output name=release-version::\${nextRelease.version}'
 const [owner, repo] = String(GITHUB_REPOSITORY).toLowerCase().split("/");
 const addPlugin = (plugin, options) => {
   log.info(`${plugin} enabled ${options && 'with options:'}`);
-  options && log.info(options);
+  options && log.info(null, options);
   return plugins.push([plugin, options]);
 };
 
