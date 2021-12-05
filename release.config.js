@@ -141,9 +141,7 @@ addPlugin("@semantic-release/git", {
     "public/diagram.svg",
     "action.yml"
   ],
-  // "message": `chore(release): deploy <%= {nextRelease.version} %> <% if (nextRelease.channel) { %>on <% nextRelease.channel %> channel <% } %>[skip ci]\n\n<% nextRelease.notes %>`
-  // "message": `<%= typeof(nextRelease.channel) !== "undefined" ? nextRelease.channel : '' %>`
-  "message": `chore(release): deploy <%= nextRelease.version %> <%= typeof(nextRelease.channel) !== "undefined" ? \`on \${nextRelease.channel} channel \` : '' %>[skip ci]\n\n<%= nextRelease.notes %>`
+  "message": `chore(<%= nextRelease.type %>): release <%= nextRelease.version %> <%= nextRelease.channel !== null ? \`on \${nextRelease.channel} channel \` : '' %>[skip ci]\n\n<%= nextRelease.notes %>`
 });
 
 addPlugin("@semantic-release/github", {
