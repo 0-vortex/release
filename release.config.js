@@ -65,24 +65,28 @@ addPlugin("@semantic-release/commit-analyzer", {
 addPlugin("@semantic-release/release-notes-generator", {
   "preset": "conventionalcommits",
   "parserOpts": {
-    "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
+    "noteKeywords": [
+      "BREAKING CHANGE",
+      "BREAKING CHANGES",
+      "BREAKING"
+    ]
   },
   "writerOpts": {
     "commitsSort": ["subject", "scope"]
   },
   "presetConfig": {
     types: [
-      {type: "feat", section: "💡 Features"},
-      {type: "feature", section: "💡 Features"},
+      {type: "feat", section: "🍕 Features"},
+      {type: "feature", section: "🍕 Features"},
       {type: "fix", section: "🐛 Bug Fixes"},
       {type: "perf", section: "🔥 Performance Improvements"},
-      {type: "revert", section: "👷 Reverts"},
+      {type: "revert", section: "⏩ Reverts"},
       {type: "docs", section: "📝 Documentation"},
       {type: "style", section: "🎨 Styles"},
       {type: "refactor", section: "🧑‍💻 Code Refactoring"},
-      {type: "test", section: "👀 Tests"},
+      {type: "test", section: "✅ Tests"},
       {type: "build", section: "🤖 Build System"},
-      {type: "ci", section: "🍕 Continuous Integration"}
+      {type: "ci", section: "🔁 Continuous Integration"}
     ]
   }
 });
