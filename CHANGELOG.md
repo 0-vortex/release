@@ -5,6 +5,53 @@
 
 > All notable changes to this project will be documented in this file
 
+## [3.29.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.28.0...v3.29.0) (2021-12-05)
+
+
+### 🐛 Bug Fixes
+
+* correct emojis for github releases ([bfc93d0](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/bfc93d0d97a734e3d558d8de8ad320dec4a65716))
+
+
+### 📝 Documentation
+
+* test release notes ([df1d499](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/df1d4993adcab84e992a588838f8bb7333fb0990))
+
+
+### 🎨 Styles
+
+* test release notes ([61f369e](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/61f369e24708047c0f9853d81e5e47d11cb772bb))
+
+
+### 🧑‍💻 Code Refactoring
+
+* test release notes ([c71effe](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/c71effe2f02e9c646772e0697ea6fd5f7f849cc0))
+
+
+### 🔥 Performance Improvements
+
+* test release notes ([dc9e058](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/dc9e0582093994b5fbcd0a803cbe7775f8dc26f2))
+
+
+### ✅ Tests
+
+* test release notes ([c5975f5](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/c5975f5dbb6366b4fd25ca4e5feca3fc812788fd))
+
+
+### 🤖 Build System
+
+* test release notes ([a075824](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/a07582414fce132cd597c59f81b20dd7e0053517))
+
+
+### 🔁 Continuous Integration
+
+* test release notes ([284f8a5](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/284f8a5dce250e5cda622134a32ad74f4a0e6c3b))
+
+
+### ⏩ Reverts
+
+* test release notes ([79e0fb3](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/79e0fb327bd9ca249bb95c0b7814a648d3e04952))
+
 ## [3.28.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.27.0...v3.28.0) (2021-12-05)
 
 
