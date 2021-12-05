@@ -173,7 +173,7 @@ if (dockerExists) {
   });
 }
 
-if (process.env.GITHUB_ACTIONS !== "undefined") {
+if (process.env.GITHUB_ACTIONS !== undefined) {
   addPlugin("@semantic-release/exec", {
     successCmd,
   });
