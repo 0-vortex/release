@@ -141,15 +141,7 @@ addPlugin("@semantic-release/git", {
     "public/diagram.svg",
     "action.yml"
   ],
-  // "message": `chore(release): \${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}`
-  "message": `chore(release): \${nextRelease.version} [skip ci]
-
-branch: \${branch}
-name: \${nextRelease.name}
-channel: \${nextRelease.channel}
-version: \${nextRelease.version}
-gitTag: \${nextRelease.gitTag}
-notes: \${nextRelease.notes}`
+  "message": `chore(release): \${nextRelease.version}\${nextRelease.channel && ' on \${nextRelease.channel} channel'} [skip ci]\n\n\${nextRelease.notes}`
 });
 
 addPlugin("@semantic-release/github", {
