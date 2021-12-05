@@ -19,7 +19,8 @@ echo '::set-output name=release-version::\${nextRelease.version}'
 `;
 const [owner, repo] = String(GITHUB_REPOSITORY).toLowerCase().split("/");
 const addPlugin = (plugin, options) => {
-  log.info(`${plugin}- enabled ${options && 'with options:'}`, options);
+  log.info(`${plugin} enabled ${options && 'with options:'}`);
+  options && log.info(options);
   return plugins.push([plugin, options]);
 };
 
@@ -143,13 +144,12 @@ addPlugin("@semantic-release/git", {
   // "message": `chore(release): \${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}`
   "message": `chore(release): \${nextRelease.version} [skip ci]
 
-Branch: \${branch}
-Branch name: \${branch.name}
-Branch type: \${branch.type}
-Branch channel: \${branch.channel}
-Branch range: \${branch.range}
-lastRelease: \${JSON.stringify(lastRelease)}
-nextRelease: \${JSON.stringify(nextRelease)}`
+branch: \${branch}
+name: \${nextRelease.name}
+channel: \${nextRelease.channel}
+version: \${nextRelease.version}
+gitTag: \${nextRelease.gitTag}
+notes: \${nextRelease.notes}`
 });
 
 addPlugin("@semantic-release/github", {
