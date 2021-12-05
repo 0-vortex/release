@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [3.26.6](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.5...v3.26.6) (2021-12-05)
+
+
+### Tests
+
+* granulate logger further ([d3b46e4](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/d3b46e41f248df2aecff0cf9a10bcbfdff27dbbf))
+
 ### [3.26.5](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.4...v3.26.5) (2021-12-05)
 
 
