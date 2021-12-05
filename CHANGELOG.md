@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [3.26.5](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.4...v3.26.5) (2021-12-05)
+
+
+### Performance Improvements
+
+* try better conditional builds and logging ([cee762a](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/cee762ac870b4a415a85127b4e797a82b156ce3f))
+
 ### [3.26.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.3...v3.26.4) (2021-12-03)
 
 
