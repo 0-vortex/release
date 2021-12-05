@@ -5,6 +5,30 @@
 
 > All notable changes to this project will be documented in this file
 
+### [3.26.8](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.7...v3.26.8) (2021-12-05)
+
+
+### Bug Fixes
+
+* correct release notes commit and upgrade npm config ([0fd0408](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/0fd0408ce7a75256afa1b986c1962272e8775662))
+* learn lodash templates ([7c82866](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/7c828664d05709669ac559496ec78d0dc9385ba2))
+* learn to write javascript again ([d7f3671](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/d7f36717c6b480f331b9917d61b17a6ea684dafa))
+
+
+### Performance Improvements
+
+* attempt to fix lodash templates ([59fdad6](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/59fdad6d1236a258dfb8bf0ffdfb680839cd9fd7))
+
+
+### Styles
+
+* adjust release commit notes ([4484244](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/44842444e08cbb891731e2b19cadcfee1651d22e))
+
+
+### Tests
+
+* use different conditional logic ([3739c9f](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/3739c9f0a54f5e37cb2b31a5c8fcf784400097ca))
+
 ### [3.26.7](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.6...v3.26.7) (2021-12-05)
 
 
