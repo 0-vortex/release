@@ -142,8 +142,8 @@ addPlugin("@semantic-release/git", {
     "action.yml"
   ],
   // "message": `chore(release): deploy <%= {nextRelease.version} %> <% if (nextRelease.channel) { %>on <% nextRelease.channel %> channel <% } %>[skip ci]\n\n<% nextRelease.notes %>`
-  // "message": `<% if (nextRelease.channel) { %>on <% nextRelease.channel %> channel <% } %>`
-  "message": `chore(release): deploy <%= {nextRelease.version} %>[skip ci]\\n\\n<% nextRelease.notes %>`
+  // "message": `<%= typeof(nextRelease.channel) !== "undefined" ? nextRelease.channel : '' %>`
+  "message": `chore(release): deploy <%= nextRelease.version %> <%= typeof(nextRelease.channel) !== "undefined" ? \`on \${nextRelease.channel} channel \` : '' %>[skip ci]\n\n<%= nextRelease.notes %>`
 });
 
 addPlugin("@semantic-release/github", {
