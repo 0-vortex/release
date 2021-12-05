@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [3.26.7](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.6...v3.26.7) (2021-12-05)
+
+
+### Code Refactoring
+
+* better boilerplate logging ([f798e6b](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/f798e6bf021efbbebed003cdf980adc377e7c6fe))
+
 ### [3.26.6](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.26.5...v3.26.6) (2021-12-05)
 
 
