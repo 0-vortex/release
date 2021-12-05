@@ -141,7 +141,7 @@ addPlugin("@semantic-release/git", {
     "public/diagram.svg",
     "action.yml"
   ],
-  "message": `chore(release): \${nextRelease.version}\${nextRelease.channel ? \` on \${nextRelease.channel} channel\` : ''} [skip ci]\n\n\${nextRelease.notes}`
+  "message": `chore(release): deploy <%= {nextRelease.version} %> <% if (nextRelease.channel) { %>on <% nextRelease.channel %> channel <% } %>[skip ci]\n\n<% nextRelease.notes %>`
 });
 
 addPlugin("@semantic-release/github", {
