@@ -126,7 +126,7 @@ try {
     shell: true,
   });
 
-  addPlugin("semantic-release-license", {
+  addPlugin("semantic-release-license-fork", {
     license: {
       path: stdout
     }
