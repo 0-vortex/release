@@ -4,7 +4,8 @@
 # open-sauced-semantic-config-test
 
 > [**semantic-release**](https://github.com/semantic-release/semantic-release) shareable config to publish to `npm` and/or `ghcr`.
-> now with alpha and beta pre-releases
+
+> now available as a [GitHub Marketplace action](https://github.com/marketplace/actions/open-sauced-semantic-release-conventional-config)
 
 [![Commits](https://img.shields.io/github/commit-activity/w/0-vortex/open-sauced-semantic-config-test?style=flat)](https://github.com/open-sauced/semantic-release-conventional-config/pulse)
 [![Issues](https://img.shields.io/github/issues/0-vortex/open-sauced-semantic-config-test.svg?style=flat)](https://github.com/open-sauced/semantic-release-conventional-config/issues)
@@ -14,7 +15,7 @@
 
 </div>
 
-## 🧪 Plugins
+## 📦 Plugins
 
 This shareable configuration use the following plugins:
 
@@ -43,10 +44,10 @@ You can skip here if you are using elevated [Private Access Token](https://docs.
 
 No force push or admin cherries branch protections for the following branches:
 - `main` - required
-- `alpha` - optional, pre-release branch
-- `beta` - optional, pre-release branch
 - `next` - optional, next channel
 - `next-major` - optional, next major
+- `alpha` - optional, pre-release branch
+- `beta` - optional, pre-release branch
 - `vX[.X.X]` - maintenance releases
 
 If you use more than the main branch, optionally create an environment that is limiting where pushes can come from and enable the merge strategy.
@@ -68,6 +69,10 @@ on:
   push:
     branches:
       - main
+      - next
+      - next-major
+      - alpha
+      - beta
 
 jobs:
   release:
@@ -83,7 +88,7 @@ jobs:
 
       - name: "🚀 release"
         id: semantic-release
-        uses: docker://ghcr.io/0-vortex/open-sauced-semantic-config-test:3.0.0
+        uses: docker://ghcr.io/open-sauced/semantic-release-conventional-config:3.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -105,6 +110,10 @@ on:
   push:
     branches:
       - main
+      - next
+      - next-major
+      - alpha
+      - beta
 
 jobs:
   release:
@@ -121,7 +130,7 @@ jobs:
 
       - name: "🚀 release"
         id: semantic-release
-        uses: 0-vortex/open-sauced-semantic-config-test@v3
+        uses: open-sauced/semantic-release-conventional-config@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -195,7 +204,7 @@ We are actively investigating ways to drop the 2 remaining variables as well!
 
 ## 🤝 Contributing
 
-We encourage you to contribute to Open Sauced! Please check out the [Contributing guide](https://docs.opensauced.pizza/) for guidelines about how to proceed.
+We encourage you to contribute to Open Sauced! Please check out the [Contributing guide](https://docs.opensauced.pizza/contributing/introduction-to-contributing/) for guidelines about how to proceed.
 
 If you decide to fix a bug, make sure to use the conventional commit available at:
 
