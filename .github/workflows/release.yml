@@ -88,10 +88,10 @@ jobs:
 
       - name: "🚀 release"
         id: release
-        uses: docker://0-vortex/open-sauced-semantic-config-test:latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
 
   cleanup:
     name: Cleanup actions
