@@ -5,6 +5,23 @@
 
 > All notable changes to this project will be documented in this file
 
+### [3.30.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.30.0...v3.30.1) (2021-12-12)
+
+
+### 🔁 Continuous Integration
+
+* test more optimized local build ([3bbefb0](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/3bbefb0ff76d901cc365eaef871f16a274a9a50b))
+
+
+### ✅ Tests
+
+* try running unicorn style ([804ceaa](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/804ceaa3b14a4fda69fcd079e874bb062b279bc6))
+
+
+### ⏩ Reverts
+
+* optimize docker container action run ([a880a96](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/a880a964fc124427e6656fe2923fd3a0cf483647))
+
 ## [3.30.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.29.1...v3.30.0) (2021-12-05)
 
 
