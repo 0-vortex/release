@@ -59,14 +59,22 @@ addPlugin("@semantic-release/commit-analyzer", {
     {type: "chore", release: false}
   ],
   "parserOpts": {
-    noteKeywords
+    "noteKeywords": [
+      "BREAKING CHANGE",
+      "BREAKING CHANGES",
+      "BREAKING"
+    ]
   }
 });
 
 addPlugin("@semantic-release/release-notes-generator", {
   "preset": "conventionalcommits",
   "parserOpts": {
-    noteKeywords
+    "noteKeywords": [
+      "BREAKING CHANGE",
+      "BREAKING CHANGES",
+      "BREAKING"
+    ]
   },
   "writerOpts": {
     "commitsSort": ["subject", "scope"]
