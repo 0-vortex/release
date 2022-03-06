@@ -1,3 +1,14 @@
+## [4.1.0-alpha.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v4.1.0-alpha.1...v4.1.0-alpha.2) (2022-03-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* test v3 bc
+
+### Tests
+
+* attempt to restore v3 functionality and bc ([7e376db](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/7e376db015245f584b6c207c7b0d65f7ca96c041))
+
 ## [4.1.0-alpha.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v4.0.0...v4.1.0-alpha.1) (2022-03-06)
 
 
