@@ -37,6 +37,26 @@ log.info(`Executing semantic-release config setup`);
 addPlugin("@semantic-release/commit-analyzer", {
   "preset": "conventionalcommits",
   "releaseRules": [
+    // {type: "feat", release: "minor"},
+    // {type: "fix", release: "patch"},
+    // {type: "perf", release: "patch"},
+    {type: "build", release: "patch"},
+    {type: "ci", release: "patch"},
+    {type: "docs", release: "minor"},
+    {type: "style", release: "patch"},
+    {type: "refactor", release: "patch"},
+    {type: "test", release: "patch"},
+    {type: "revert", release: "patch"},
+    {type: "chore", release: false}
+  ],
+  "parserOpts": {
+    "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
+  }
+});
+
+addPlugin("@semantic-release/release-notes-generator", {
+  "preset": "conventionalcommits",
+  "releaseRules": [
     {type: "feat", release: "minor"},
     {type: "fix", release: "patch"},
     {type: "perf", release: "patch"},
@@ -51,31 +71,6 @@ addPlugin("@semantic-release/commit-analyzer", {
   ],
   "parserOpts": {
     noteKeywords
-  }
-});
-
-addPlugin("@semantic-release/release-notes-generator", {
-  "preset": "conventionalcommits",
-  "parserOpts": {
-    "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
-  },
-  "writerOpts": {
-    "commitsSort": ["subject", "scope"]
-  },
-  "presetConfig": {
-    types: [
-      {type: 'feat', section: 'Features'},
-      {type: 'feature', section: 'Features'},
-      {type: 'fix', section: 'Bug Fixes'},
-      {type: 'perf', section: 'Performance Improvements'},
-      {type: 'revert', section: 'Reverts'},
-      {type: 'docs', section: 'Documentation'},
-      {type: 'style', section: 'Styles'},
-      {type: 'refactor', section: 'Code Refactoring'},
-      {type: 'test', section: 'Tests'},
-      {type: 'build', section: 'Build System'},
-      {type: 'ci', section: 'Continuous Integration'}
-    ]
   }
 });
 
@@ -107,7 +102,7 @@ addPlugin("@semantic-release/github", {
 module.exports = {
   "branches": [
     // maintenance releases
-    "+([0-9])?(.{+([0-9]),x}).x",
+    // "+([0-9])?(.{+([0-9]),x}).x",
 
     // release channels
     "main",
