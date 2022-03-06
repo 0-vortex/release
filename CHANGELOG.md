@@ -1,3 +1,10 @@
+## [4.1.0-alpha.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v4.0.0...v4.1.0-alpha.1) (2022-03-06)
+
+
+### Build System
+
+* update dependencies and test alpha ([4ad0c63](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/4ad0c63e69d1ef79fe35e36d6c2def95e5f69ea3))
+
 ## [4.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.31.3...v4.0.0) (2022-03-06)
 
 
