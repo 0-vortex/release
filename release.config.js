@@ -132,12 +132,10 @@ if (actionExists) {
 
 try {
   const {stdout} = commandSync("ls -A1 LICENSE*", {shell: true});
-  console.log(resolve(stdout));
-  process.exit(1);
 
   addPlugin("semantic-release-license-fork", {
     license: {
-      path: stdout
+      path: resolve(stdout)
     }
   });
 } catch (e) {
