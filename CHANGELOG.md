@@ -1,3 +1,14 @@
+## [5.0.0-alpha.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v5.0.0-alpha.2...v5.0.0-alpha.3) (2022-03-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* test release config bc outside of dependencies
+
+### Features
+
+* test breaking changes again ([c03ae49](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/c03ae492ef21068f74c63d2c78e334d90499903a))
+
 # 📦 0-vortex/open-sauced-semantic-config-test changelog
 
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
