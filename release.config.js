@@ -46,6 +46,26 @@ try {
 addPlugin("@semantic-release/commit-analyzer", {
   "preset": "conventionalcommits",
   "releaseRules": [
+    // {type: "feat", release: "minor"},
+    // {type: "fix", release: "patch"},
+    // {type: "perf", release: "patch"},
+    {type: "build", release: "patch"},
+    {type: "ci", release: "patch"},
+    {type: "docs", release: "minor"},
+    {type: "style", release: "patch"},
+    {type: "refactor", release: "patch"},
+    {type: "test", release: "patch"},
+    {type: "revert", release: "patch"},
+    {type: "chore", release: false}
+  ],
+  "parserOpts": {
+    "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
+  }
+});
+
+addPlugin("@semantic-release/release-notes-generator", {
+  "preset": "conventionalcommits",
+  "releaseRules": [
     {type: "feat", release: "minor"},
     {type: "fix", release: "patch"},
     {type: "perf", release: "patch"},
@@ -63,96 +83,23 @@ addPlugin("@semantic-release/commit-analyzer", {
   }
 });
 
-addPlugin("@semantic-release/release-notes-generator", {
-  "preset": "conventionalcommits",
-  "parserOpts": {
-    noteKeywords
-  },
-  "writerOpts": {
-    "commitsSort": ["subject", "scope"]
-  },
-  "presetConfig": {
-    types: [
-      {type: "feat", section: "🍕 Features"},
-      {type: "feature", section: "🍕 Features"},
-      {type: "fix", section: "🐛 Bug Fixes"},
-      {type: "perf", section: "🔥 Performance Improvements"},
-      {type: "revert", section: "⏩ Reverts"},
-      {type: "docs", section: "📝 Documentation"},
-      {type: "style", section: "🎨 Styles"},
-      {type: "refactor", section: "🧑‍💻 Code Refactoring"},
-      {type: "test", section: "✅ Tests"},
-      {type: "build", section: "🤖 Build System"},
-      {type: "ci", section: "🔁 Continuous Integration"}
-    ]
-  }
-});
-
-addPlugin("@semantic-release/changelog", {
-  "changelogTitle": `# 📦 ${owner}/${repo} changelog
-
-[![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-[![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
-
-> All notable changes to this project will be documented in this file`
-});
+addPlugin("@semantic-release/changelog");
 
 addPlugin("@semantic-release/npm", {
   "tarballDir": "pack"
 });
 
-const actionExists = existsSync("./action.yml");
-if (actionExists) {
-  addPlugin("@google/semantic-release-replace-plugin", {
-    "replacements": [{
-      "files": [
-        "action.yml"
-      ],
-      "from": `image: 'docker://ghcr.io/${owner}/${repo}:.*'`,
-      "to": `image: 'docker://ghcr.io/${owner}/${repo}:\${nextRelease.version}'`,
-      "results": [{
-        "file": "action.yml",
-        "hasChanged": true,
-        "numMatches": 1,
-        "numReplacements": 1
-      }],
-      "countMatches": true
-    }]
-  });
-}
-
-try {
-  const {stdout} = commandSync("ls -A1 LICENSE*", {
-    shell: true,
-  });
-
-  addPlugin("semantic-release-license", {
-    license: {
-      path: stdout
-    }
-  });
-} catch (e) {
-  log.error(`Unable to run detect license command`, e);
-}
-
 addPlugin("@semantic-release/git", {
   "assets": [
-    "LICENSE*",
     "CHANGELOG.md",
     "package.json",
-    "package-lock.json",
     "npm-shrinkwrap.json",
-    "yarn.lock",
-    "pnpm-lock.yaml",
-    "public/**/*",
-    "supabase/**/*",
-    "action.yml"
+    "public/diagram.svg"
   ],
-  "message": `chore(<%= nextRelease.type %>): release <%= nextRelease.version %> <%= nextRelease.channel !== null ? \`on \${nextRelease.channel} channel \` : '' %>[skip ci]\n\n<%= nextRelease.notes %>`
+  "message": `chore(release): \${nextRelease.version}\n\n\${nextRelease.notes}`
 });
 
 addPlugin("@semantic-release/github", {
-  "addReleases": "bottom",
   "assets": [
     {
       "path": "pack/*.tgz",
@@ -160,27 +107,6 @@ addPlugin("@semantic-release/github", {
     }
   ]
 });
-
-const dockerExists = existsSync("./Dockerfile");
-if (dockerExists) {
-  addPlugin("eclass-docker-fork", {
-    "baseImageName": `${owner}/${repo}`,
-    "registries": [
-      {
-        "url": "ghcr.io",
-        "imageName": `ghcr.io/${owner}/${repo}`,
-        "user": "GITHUB_REPOSITORY_OWNER",
-        "password": "GITHUB_TOKEN"
-      }
-    ]
-  });
-}
-
-if (process.env.GITHUB_ACTIONS !== undefined) {
-  addPlugin("@semantic-release/exec", {
-    successCmd,
-  });
-}
 
 module.exports = {
   "branches": [
