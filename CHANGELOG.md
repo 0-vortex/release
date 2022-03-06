@@ -1,3 +1,25 @@
+## [4.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.31.3...v4.0.0) (2022-03-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* test 1.4.0 bc
+
+### Features
+
+* re-implement semantic-release branches ([6d8b828](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/6d8b828695d2305d74aa77020bd921f8711165e1))
+* revert to v1.4.0 ([e4e67e3](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/e4e67e32105ac3f168a45eea912c99d89e186bf0))
+
+
+### Bug Fixes
+
+* temp disable docker builds ([23acb40](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/23acb4035a9938938fd016aa02d46a60407ff2c5))
+
+
+### Build System
+
+* correct lock file revert ([f03048c](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/f03048c36c32647a6942409cc57b84384e41b258))
+
 # 📦 0-vortex/open-sauced-semantic-config-test changelog
 
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
