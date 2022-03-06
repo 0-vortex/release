@@ -78,6 +78,24 @@ const plugins = [
 ]);
 
 module.exports = {
-  "branches": ["main"],
+  "branches": [
+    // maintenance releases
+    // "+([0-9])?(.{+([0-9]),x}).x",
+
+    // release channels
+    "main",
+    "next",
+    "next-major",
+
+    // pre-releases
+    {
+      name: "beta",
+      prerelease: true
+    },
+    {
+      name: "alpha",
+      prerelease: true
+    }
+  ],
   plugins,
 }
