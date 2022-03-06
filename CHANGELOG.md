@@ -5,6 +5,43 @@
 
 > All notable changes to this project will be documented in this file
 
+## [3.31.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.30.1...v3.31.0) (2022-03-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* testing 2.1.0 bc
+* testing
+* test bc
+
+### 🤖 Build System
+
+* correct license plugin ([7c35176](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/7c35176f8c84c89f888db8538d889bdb2b7a108f))
+
+
+### 🧑‍💻 Code Refactoring
+
+* check variables ([5dad9fc](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/5dad9fceb78e67a82b7df7596117426ec5b529cd))
+
+
+### ✅ Tests
+
+* test absolute license path ([05aa19e](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/05aa19ef2ceb412daa49751d4fefe60df0fbb89d))
+* test breaking changes, again ([a892c65](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/a892c658c2e90c071fbded9cf784102aa4d0632b))
+* try better license matching ([10ed451](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/10ed45174a7e987fd36906b6fe99dd04e28e91e9))
+
+
+### 🍕 Features
+
+* test bc again ([ca9de99](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/ca9de99ca4a0826ce5aac1daad728f994faa5fc7))
+
+
+### 🐛 Bug Fixes
+
+* add missing imaginary part to the previous commit ([7853e3f](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/7853e3fd5fa28f0ea0b12f6fc6703f0044748ae3))
+* correct license plugin ([96ead46](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/96ead4665a4ae2bfa9d3b206406897024f6501c6))
+* revert to 2.1.0 state ([ba93411](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/ba93411a04ac772fafe27bcf4464f9eb4b3c0ba3))
+
 ### [3.30.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.30.0...v3.30.1) (2021-12-12)
 
 
