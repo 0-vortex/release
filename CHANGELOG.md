@@ -5,6 +5,17 @@
 
 > All notable changes to this project will be documented in this file
 
+### [3.31.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.31.1...v3.31.2) (2022-03-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* correct breaking changes not working
+
+### 🐛 Bug Fixes
+
+* attempt to correct release process ([2980e14](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/2980e14cc45af75ae27b9e663809d0f01221bbe0)), closes [#22](https://github.com/0-vortex/open-sauced-semantic-config-test/issues/22)
+
 ### [3.31.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.31.0...v3.31.1) (2022-03-06)
 
 
