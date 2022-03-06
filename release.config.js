@@ -62,20 +62,20 @@ const plugins = [
   }],
 ];
 
-!process.env.DISABLE_DOCKER && plugins.push([
-  "@eclass/semantic-release-docker",
-  {
-    "baseImageName": `${process.env.GITHUB_REPOSITORY}`,
-    "registries": [
-      {
-        "url": "ghcr.io",
-        "imageName": `ghcr.io/${process.env.GITHUB_REPOSITORY}`,
-        "user": "REPO_OWNER",
-        "password": "GITHUB_TOKEN"
-      }
-    ]
-  }
-]);
+// !process.env.DISABLE_DOCKER && plugins.push([
+//   "@eclass/semantic-release-docker",
+//   {
+//     "baseImageName": `${process.env.GITHUB_REPOSITORY}`,
+//     "registries": [
+//       {
+//         "url": "ghcr.io",
+//         "imageName": `ghcr.io/${process.env.GITHUB_REPOSITORY}`,
+//         "user": "REPO_OWNER",
+//         "password": "GITHUB_TOKEN"
+//       }
+//     ]
+//   }
+// ]);
 
 module.exports = {
   "branches": [
