@@ -60,14 +60,14 @@ addPlugin("@semantic-release/commit-analyzer", {
     {type: "chore", release: false}
   ],
   "parserOpts": {
-    "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
+    noteKeywords
   }
 });
 
 addPlugin("@semantic-release/release-notes-generator", {
   "preset": "conventionalcommits",
   "parserOpts": {
-    "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
+    noteKeywords
   },
   "writerOpts": {
     "commitsSort": ["subject", "scope"]
