@@ -1,3 +1,26 @@
+# 📦 0-vortex/open-sauced-semantic-config-test changelog
+
+[![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
+
+> All notable changes to this project will be documented in this file
+
+## [5.0.0-alpha.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v5.0.0-alpha.1...v5.0.0-alpha.2) (2022-03-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* dropped node 15 and test bc
+
+### 🍕 Features
+
+* upstream open-sauced released version ([544487e](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/544487ec77aef65f4da8c8bdf7df77fd4dde60a5))
+
+
+### ✅ Tests
+
+* use correct engines configuration ([3ee1e52](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/3ee1e52b16ccc7f779ae1dd6cea9f2fd123f3bfa))
+
 ## [5.0.0-alpha.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v4.1.0-alpha.2...v5.0.0-alpha.1) (2022-03-06)
 
 
