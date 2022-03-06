@@ -1,3 +1,4 @@
+const { resolve } = require('path');
 const { existsSync } = require("fs");
 const { sync, commandSync } = require("execa");
 const log = require("npmlog");
@@ -130,10 +131,8 @@ if (actionExists) {
 }
 
 try {
-  const {stdout: license} = commandSync("ls -A1 LICENSE*", {shell: true});
-  const {stdout: pwd} = commandSync("pwd", {shell: true});
-  console.log(license);
-  console.log(pwd);
+  const {stdout} = commandSync("ls -A1 LICENSE*", {shell: true});
+  console.log(resolve(stdout));
   process.exit(1);
 
   addPlugin("semantic-release-license-fork", {
