@@ -1,5 +1,6 @@
 const { existsSync } = require("fs");
 const { sync, commandSync } = require("execa");
+const { resolve } = require("path");
 const log = require("npmlog");
 
 const plugins = [];
@@ -129,7 +130,7 @@ try {
 
   addPlugin("semantic-release-license", {
     license: {
-      path: stdout
+      path: resolve(stdout)
     }
   });
 } catch (e) {
@@ -186,7 +187,7 @@ if (process.env.GITHUB_ACTIONS !== undefined) {
 module.exports = {
   "branches": [
     // maintenance releases
-    // "+([0-9])?(.{+([0-9]),x}).x",
+    "+([0-9])?(.{+([0-9]),x}).x",
 
     // release channels
     "main",
