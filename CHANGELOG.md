@@ -1,3 +1,99 @@
+## [5.0.0-alpha.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v5.0.0-alpha.3...v5.0.0-alpha.4) (2022-03-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* test bc3
+
+### Features
+
+* test revert functional bc again ([c83a7cc](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/c83a7ccd54ae32042c3506effb8e9e0faa8f83d9))
+
+## [5.0.0-alpha.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v5.0.0-alpha.2...v5.0.0-alpha.3) (2022-03-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* test release config bc outside of dependencies
+
+### Features
+
+* test breaking changes again ([c03ae49](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/c03ae492ef21068f74c63d2c78e334d90499903a))
+
+# 📦 0-vortex/open-sauced-semantic-config-test changelog
+
+[![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
+
+> All notable changes to this project will be documented in this file
+
+## [5.0.0-alpha.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v5.0.0-alpha.1...v5.0.0-alpha.2) (2022-03-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* dropped node 15 and test bc
+
+### 🍕 Features
+
+* upstream open-sauced released version ([544487e](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/544487ec77aef65f4da8c8bdf7df77fd4dde60a5))
+
+
+### ✅ Tests
+
+* use correct engines configuration ([3ee1e52](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/3ee1e52b16ccc7f779ae1dd6cea9f2fd123f3bfa))
+
+## [5.0.0-alpha.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v4.1.0-alpha.2...v5.0.0-alpha.1) (2022-03-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* test bc
+
+### Features
+
+* test dismiss maintenance releases ([e1b90d9](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/e1b90d9eb5c30d70ba12cc397e5efc8e225ccd8e))
+
+## [4.1.0-alpha.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v4.1.0-alpha.1...v4.1.0-alpha.2) (2022-03-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* test v3 bc
+
+### Tests
+
+* attempt to restore v3 functionality and bc ([7e376db](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/7e376db015245f584b6c207c7b0d65f7ca96c041))
+
+## [4.1.0-alpha.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v4.0.0...v4.1.0-alpha.1) (2022-03-06)
+
+
+### Build System
+
+* update dependencies and test alpha ([4ad0c63](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/4ad0c63e69d1ef79fe35e36d6c2def95e5f69ea3))
+
+## [4.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v3.31.3...v4.0.0) (2022-03-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* test 1.4.0 bc
+
+### Features
+
+* re-implement semantic-release branches ([6d8b828](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/6d8b828695d2305d74aa77020bd921f8711165e1))
+* revert to v1.4.0 ([e4e67e3](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/e4e67e32105ac3f168a45eea912c99d89e186bf0))
+
+
+### Bug Fixes
+
+* temp disable docker builds ([23acb40](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/23acb4035a9938938fd016aa02d46a60407ff2c5))
+
+
+### Build System
+
+* correct lock file revert ([f03048c](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/f03048c36c32647a6942409cc57b84384e41b258))
+
 # 📦 0-vortex/open-sauced-semantic-config-test changelog
 
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
