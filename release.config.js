@@ -34,15 +34,6 @@ log.info(`Executing semantic-release config setup`);
 !GIT_COMMITTER_NAME && (process.env.GIT_COMMITTER_NAME = "open-sauced[bot]");
 !GIT_COMMITTER_EMAIL && (process.env.GIT_COMMITTER_EMAIL = "63161813+open-sauced[bot]@users.noreply.github.com");
 
-try {
-  const { stdout: authorName } = sync("git", ["log", "-1", "--pretty=format:%an", GITHUB_SHA]);
-  const { stdout: authorEmail } = sync("git", ["log", "-1", "--pretty=format:%ae", GITHUB_SHA]);
-  authorName && !GIT_AUTHOR_NAME && (process.env.GIT_AUTHOR_NAME = `${authorName}`);
-  authorEmail && !GIT_AUTHOR_EMAIL && (process.env.GIT_AUTHOR_EMAIL = `${authorEmail}`);
-} catch (e) {
-  log.error(`Unable to set GIT_COMMITTER_NAME and GIT_COMMITTER_EMAIL`, e);
-}
-
 addPlugin("@semantic-release/commit-analyzer", {
   "preset": "conventionalcommits",
   "releaseRules": [
@@ -110,7 +101,7 @@ addPlugin("@semantic-release/github", {
 
 module.exports = {
   "branches": [
-    // maintenance releases temporarily disabled (regex failure)
+    // maintenance releases
     // "+([0-9])?(.{+([0-9]),x}).x",
 
     // release channels
