@@ -1,3 +1,21 @@
+# 📦 0-vortex/open-sauced-semantic-config-test changelog
+
+[![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
+
+> All notable changes to this project will be documented in this file
+
+## [8.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v7.0.0...v8.0.0) (2022-03-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* test upstream bc
+
+### ✅ Tests
+
+* test upstream bc ([078d35d](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/078d35d1dc724d3ed071572ec16bc067fd94a3c3))
+
 ## [7.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v6.0.0...v7.0.0) (2022-03-07)
 
 
