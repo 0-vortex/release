@@ -5,6 +5,17 @@
 
 > All notable changes to this project will be documented in this file
 
+## [10.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v9.0.0...v10.0.0) (2022-03-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* correct engines bc
+
+### 🐛 Bug Fixes
+
+* correct engines ([0ccce43](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/0ccce437714e637be894b9a11ae29beecdd08034))
+
 ## [9.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v8.0.0...v9.0.0) (2022-03-07)
 
 
