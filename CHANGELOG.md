@@ -1,3 +1,27 @@
+## [5.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v4.0.0...v5.0.0) (2022-03-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* test bc3
+* test release config bc outside of dependencies
+* dropped node 15 and test bc
+* test bc
+* test v3 bc
+
+### Features
+
+* test breaking changes again ([c03ae49](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/c03ae492ef21068f74c63d2c78e334d90499903a))
+* test dismiss maintenance releases ([e1b90d9](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/e1b90d9eb5c30d70ba12cc397e5efc8e225ccd8e))
+* test revert functional bc again ([c83a7cc](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/c83a7ccd54ae32042c3506effb8e9e0faa8f83d9))
+* upstream open-sauced released version ([544487e](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/544487ec77aef65f4da8c8bdf7df77fd4dde60a5))
+
+
+### Tests
+
+* attempt to restore v3 functionality and bc ([7e376db](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/7e376db015245f584b6c207c7b0d65f7ca96c041))
+* use correct engines configuration ([3ee1e52](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/3ee1e52b16ccc7f779ae1dd6cea9f2fd123f3bfa))
+
 ## [5.0.0-alpha.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v5.0.0-alpha.3...v5.0.0-alpha.4) (2022-03-07)
 
 
