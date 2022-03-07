@@ -1,3 +1,14 @@
+### [5.0.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v5.0.0...v5.0.1) (2022-03-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* test bc 5
+
+### Tests
+
+* test bc 5 ([96a26a7](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/96a26a77596d3f219115cc9f740c077116f9b4eb))
+
 ## [5.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v4.0.0...v5.0.0) (2022-03-07)
 
 
