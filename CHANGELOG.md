@@ -1,3 +1,14 @@
+## [7.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v6.0.0...v7.0.0) (2022-03-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* test bc dependencies
+
+### Tests
+
+* test bc dependencies ([9094ed9](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/9094ed9f1cf7689f7c9cd4e33ecc5efdeedec709))
+
 ## [6.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v5.0.1...v6.0.0) (2022-03-07)
 
 
