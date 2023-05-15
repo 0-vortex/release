@@ -5,6 +5,24 @@
 
 > All notable changes to this project will be documented in this file
 
+### [10.0.12](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.0.11...v10.0.12) (2023-05-15)
+
+
+### 🤖 Build System
+
+* update github actions dependencies ([8750ff0](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/8750ff0c480cc64dd9e1c8a0aa03c10250d7e9d5))
+
+
+### 🐛 Bug Fixes
+
+* correct actions dependency flow ([2b0e612](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/2b0e6129af3072f3f434ff0a7a45df7a4022295f))
+
+
+### 🔁 Continuous Integration
+
+* update last actions to latest versions ([75bdb00](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/75bdb00f486a9cd7555bdfb26cf8da7f0f89021a))
+* update testing actions workflows ([774199a](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/774199accb4e8c3a7f3778d7785f7d4c590f3633))
+
 ### [10.0.11](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.0.10...v10.0.11) (2023-05-15)
 
 
