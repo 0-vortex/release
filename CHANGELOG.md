@@ -5,6 +5,18 @@
 
 > All notable changes to this project will be documented in this file
 
+## [10.0.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.0.0...v10.0.1) (2023-05-15)
+
+
+### 🤖 Build System
+
+* update packages to esm configuration versions ([1f8347c](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/1f8347c5a108c88b75eafca16928ac94e2e4e4f9))
+
+
+### 🐛 Bug Fixes
+
+* correct ci release node version ([d9ea6ea](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/d9ea6eaeefc6962e5971a23f0ff1aa653040e0a9))
+
 ## [10.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v9.0.0...v10.0.0) (2022-03-07)
 
 
