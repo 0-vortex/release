@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node:18-alpine3.14
 
 RUN apk --update --no-cache add git git-lfs jq openssh
 
