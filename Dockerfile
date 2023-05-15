@@ -1,10 +1,6 @@
-FROM alpine:3.17
+FROM node:18-alpine
 
-ENV NODE_VERSION 18.16.0
-
-RUN apk add --update  \
-    git git-lfs jq openssh \
-    nodejs npm
+RUN apk add --update --no-cache git git-lfs jq openssh
 
 COPY package.json /
 
