@@ -61,6 +61,7 @@ jobs:
       url: https://github.com/${{ github.repository }}/releases/tag/${{ env.RELEASE_TAG }}
     name: Semantic release
     needs:
+      - test
       - docker
     runs-on: ubuntu-latest
     steps:
