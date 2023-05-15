@@ -20,8 +20,8 @@ const {
 const successCmd = `
 echo 'RELEASE_TAG=v\${nextRelease.version}' >> $GITHUB_ENV
 echo 'RELEASE_VERSION=\${nextRelease.version}' >> $GITHUB_ENV
-echo '::set-output name=release-tag::v\${nextRelease.version}'
-echo '::set-output name=release-version::\${nextRelease.version}'
+echo 'release-tag=v\${nextRelease.version}' >> $GITHUB_OUTPUT
+echo 'release-version=\${nextRelease.version}' >> $GITHUB_OUTPUT
 `;
 const [owner, repo] = String(GITHUB_REPOSITORY).toLowerCase().split("/");
 const addPlugin = (plugin, options) => {
