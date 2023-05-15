@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [10.0.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.0.1...v10.0.2) (2023-05-15)
+
+
+### 🔁 Continuous Integration
+
+* restore to older alpine ([bb2602e](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/bb2602eaf140c0f916660a21a8b61c36dd0a1dd6))
+
 ## [10.0.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.0.0...v10.0.1) (2023-05-15)
 
 

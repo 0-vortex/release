@@ -11,5 +11,5 @@ branding:
   color: 'yellow'
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/0-vortex/open-sauced-semantic-config-test:10.0.1'
+  image: 'docker://ghcr.io/0-vortex/open-sauced-semantic-config-test:10.0.2'
 
