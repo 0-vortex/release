@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [10.0.6](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.0.5...v10.0.6) (2023-05-15)
+
+
+### ✅ Tests
+
+* use static entrypoint ([e788c1f](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/e788c1fe7ed6ba4f7ebb34bfb5ecf5cea8b89e04))
+
 ### [10.0.5](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.0.4...v10.0.5) (2023-05-15)
 
 
