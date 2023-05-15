@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [10.0.5](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.0.4...v10.0.5) (2023-05-15)
+
+
+### 🐛 Bug Fixes
+
+* correct usermod install privilegdes ([8393415](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/8393415790510e7c13c58ab4072624ae69701f8b))
+
 ### [10.0.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.0.3...v10.0.4) (2023-05-15)
 
 
