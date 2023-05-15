@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [10.0.8](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.0.7...v10.0.8) (2023-05-15)
+
+
+### ✅ Tests
+
+* revert user changes and optimised build ([d07af37](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/d07af3757a0ac355b6e8e0cec01f7159494cda02))
+
 ### [10.0.7](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.0.6...v10.0.7) (2023-05-15)
 
 
