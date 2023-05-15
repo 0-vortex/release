@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [10.0.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.0.2...v10.0.3) (2023-05-15)
+
+
+### ✅ Tests
+
+* lockdown git pre-safe mode inside container ([59a40b8](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/59a40b8aaf1fd2bef705f90f982c7bb46240ee8c))
+
 ### [10.0.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.0.1...v10.0.2) (2023-05-15)
 
 
