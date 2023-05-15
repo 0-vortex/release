@@ -13,6 +13,8 @@ RUN apk add --update make \
   && rm -rf /var/cache/apk/* \
   && rm -rf /package.json
 
-COPY entrypoint.sh /entrypoint.sh
+git config --global --add safe.directory $GITHUB_WORKSPACE
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["npx"]
+
+CMD ["semantic-release", "--extends", "/usr/local/lib/release.config.js"]
