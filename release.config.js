@@ -18,10 +18,10 @@ const {
   GIT_AUTHOR_EMAIL,
 } = process.env;
 const successCmd = `
-echo 'RELEASE_TAG=v\${nextRelease.version}' >> $GITHUB_ENV
-echo 'RELEASE_VERSION=\${nextRelease.version}' >> $GITHUB_ENV
-echo 'release-tag=v\${nextRelease.version}' >> $GITHUB_OUTPUT
-echo 'release-version=\${nextRelease.version}' >> $GITHUB_OUTPUT
+echo 'RELEASE_TAG=v\${nextRelease.version}' >> "$GITHUB_ENV"
+echo 'RELEASE_VERSION=\${nextRelease.version}' >> "$GITHUB_ENV"
+echo 'release-tag=v\${nextRelease.version}' >> "$GITHUB_OUTPUT"
+echo 'release-version=\${nextRelease.version}' >> "$GITHUB_OUTPUT"
 `;
 const [owner, repo] = String(GITHUB_REPOSITORY).toLowerCase().split("/");
 const addPlugin = (plugin, options) => {
