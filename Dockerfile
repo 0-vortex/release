@@ -13,7 +13,7 @@ RUN apk add --update make \
   && rm -rf /var/cache/apk/* \
   && rm -rf /package.json
 
-git config --global --add safe.directory $GITHUB_WORKSPACE
+RUN git config --global --add safe.directory /github/workspace
 
 ENTRYPOINT ["npx"]
 
