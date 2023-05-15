@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [10.0.4](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.0.3...v10.0.4) (2023-05-15)
+
+
+### 🐛 Bug Fixes
+
+* correct github actions runner user ([a290aca](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/a290aca73277e42d84d6e4024634ad46a1f5b7c1))
+
 ### [10.0.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.0.2...v10.0.3) (2023-05-15)
 
 
