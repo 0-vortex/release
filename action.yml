@@ -1,4 +1,4 @@
-name: 'release'
+name: '@0-vortex/release'
 author: '0-vortex'
 description: 'Run 0-vortex/release on a repo'
 outputs:

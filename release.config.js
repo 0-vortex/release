@@ -41,7 +41,7 @@ const {
 } = process.env;
 const [owner, repo] = String(GITHUB_REPOSITORY).toLowerCase().split("/");
 const addPlugin = (plugin, options) => {
-  log.info(`${plugin} enabled ${options && 'with options:'}`);
+  log.info(`${plugin} enabled with${options && ' options:' || 'out options'}`);
   options && log.info(null, options);
   return releaseConfig.plugins.push([plugin, options]);
 };
