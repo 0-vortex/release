@@ -16,12 +16,6 @@ const {
   GIT_AUTHOR_NAME,
   GIT_AUTHOR_EMAIL,
 } = process.env;
-const successCmd = `
-echo 'RELEASE_TAG=v\${nextRelease.version}' >> $GITHUB_ENV
-echo 'RELEASE_VERSION=\${nextRelease.version}' >> $GITHUB_ENV
-echo '::set-output name=release-tag::v\${nextRelease.version}'
-echo '::set-output name=release-version::\${nextRelease.version}'
-`;
 const [owner, repo] = String(GITHUB_REPOSITORY).toLowerCase().split("/");
 const addPlugin = (plugin, options) => {
   log.info(`${plugin} enabled ${options && 'with options:'}`);
@@ -40,7 +34,8 @@ try {
   authorName && !GIT_AUTHOR_NAME && (process.env.GIT_AUTHOR_NAME = `${authorName}`);
   authorEmail && !GIT_AUTHOR_EMAIL && (process.env.GIT_AUTHOR_EMAIL = `${authorEmail}`);
 } catch (e) {
-  log.error(`Unable to set GIT_COMMITTER_NAME and GIT_COMMITTER_EMAIL`, e);
+  log.warn(`Unable to set GIT_COMMITTER_NAME and GIT_COMMITTER_EMAIL`);
+  log.error(e);
 }
 
 addPlugin("@semantic-release/commit-analyzer", {
@@ -165,7 +160,10 @@ if (dockerExists) {
 
 if (process.env.GITHUB_ACTIONS !== undefined) {
   addPlugin("@semantic-release/exec", {
-    successCmd,
+    successCmd: `echo 'RELEASE_TAG=v\${nextRelease.version}' >> $GITHUB_ENV
+echo 'RELEASE_VERSION=\${nextRelease.version}' >> $GITHUB_ENV
+echo 'release-tag=v\${nextRelease.version}' >> $GITHUB_OUTPUT
+echo 'release-version=\${nextRelease.version}' >> $GITHUB_OUTPUT`,
   });
 }
 
