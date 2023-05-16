@@ -2,7 +2,30 @@ const { existsSync } = require("node:fs");
 const { execSync } = require('node:child_process');
 const log = require("npmlog");
 
-const plugins = [];
+log.info(`Executing semantic-release config setup`);
+
+const releaseConfig = {
+  "branches": [
+    // maintenance releases
+    "+([0-9])?(.{+([0-9]),x}).x",
+
+    // release channels
+    "main",
+    "next",
+    "next-major",
+
+    // pre-releases
+    {
+      name: "beta",
+      prerelease: true
+    },
+    {
+      name: "alpha",
+      prerelease: true
+    }
+  ],
+  plugins: [],
+}
 const noteKeywords = [
   "BREAKING CHANGE",
   "BREAKING CHANGES",
@@ -20,10 +43,8 @@ const [owner, repo] = String(GITHUB_REPOSITORY).toLowerCase().split("/");
 const addPlugin = (plugin, options) => {
   log.info(`${plugin} enabled ${options && 'with options:'}`);
   options && log.info(null, options);
-  return plugins.push([plugin, options]);
+  return releaseConfig.plugins.push([plugin, options]);
 };
-
-log.info(`Executing semantic-release config setup`);
 
 !GIT_COMMITTER_NAME && (process.env.GIT_COMMITTER_NAME = "open-sauced[bot]");
 !GIT_COMMITTER_EMAIL && (process.env.GIT_COMMITTER_EMAIL = "63161813+open-sauced[bot]@users.noreply.github.com");
@@ -37,6 +58,8 @@ try {
   log.warn(`Unable to set GIT_COMMITTER_NAME and GIT_COMMITTER_EMAIL`);
   log.error(e);
 }
+
+log.info(`Adding semantic-release config plugins`);
 
 addPlugin("@semantic-release/commit-analyzer", {
   "preset": "conventionalcommits",
@@ -158,6 +181,8 @@ if (dockerExists) {
   });
 }
 
+addPlugin("semantic-release-major-tag");
+
 if (process.env.GITHUB_ACTIONS !== undefined) {
   addPlugin("@semantic-release/exec", {
     successCmd: `echo 'RELEASE_TAG=v\${nextRelease.version}' >> $GITHUB_ENV
@@ -167,25 +192,4 @@ echo 'release-version=\${nextRelease.version}' >> $GITHUB_OUTPUT`,
   });
 }
 
-module.exports = {
-  "branches": [
-    // maintenance releases
-    "+([0-9])?(.{+([0-9]),x}).x",
-
-    // release channels
-    "main",
-    "next",
-    "next-major",
-
-    // pre-releases
-    {
-      name: "beta",
-      prerelease: true
-    },
-    {
-      name: "alpha",
-      prerelease: true
-    }
-  ],
-  plugins,
-}
+module.exports = releaseConfig;
