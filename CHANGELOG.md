@@ -5,6 +5,28 @@
 
 > All notable changes to this project will be documented in this file
 
+## [10.2.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.1.0...v10.2.0) (2023-05-16)
+
+
+### 🤖 Build System
+
+* update all remaining dependencies ([56a1f81](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/56a1f81d6b2cfc1dcb243f04218bdf11096527f8))
+
+
+### 🍕 Features
+
+* update to cjs modern format ([fc897e4](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/fc897e472dfbe9803a591a7d7697704dfeb0fab5))
+
+
+### 🐛 Bug Fixes
+
+* correct github env ([dfc8e9d](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/dfc8e9daa19b60e901da472ed605397628671521))
+
+
+### 🧑‍💻 Code Refactoring
+
+* revert to previous cjs version ([bcf351b](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/bcf351b6741aab35f8bc88b0627e1d35e6d494c8))
+
 ## [10.1.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.0.12...v10.1.0) (2023-05-15)
 
 
