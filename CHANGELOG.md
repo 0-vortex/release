@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [11.0.6](https://github.com/0-vortex/release/compare/v11.0.5...v11.0.6) (2023-05-16)
+
+
+### 🔁 Continuous Integration
+
+* remove redundant parts and test outputs ([a65072b](https://github.com/0-vortex/release/commit/a65072b6b22d3db71d953a1e5cd29467b1b99861))
+
 ## [11.0.5](https://github.com/0-vortex/release/compare/v11.0.4...v11.0.5) (2023-05-16)
 
 
