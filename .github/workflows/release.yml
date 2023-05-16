@@ -100,6 +100,13 @@ jobs:
         run: |
           npx semantic-release
 
+      - name: "echo outputs"
+        run: |
+          echo "RELEASE_TAG: ${{ env.RELEASE_TAG }}"
+          echo "RELEASE_URL: ${{ env.RELEASE_URL }}"
+          echo "outputs.release-tag: ${{ steps.release.outputs.release-tag }}"
+          echo "outputs.release-version: ${{ steps.release.outputs.release-version }}"
+
   cleanup:
     name: Cleanup actions
     needs:
