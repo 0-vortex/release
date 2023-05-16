@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [11.0.4](https://github.com/0-vortex/release/compare/v11.0.3...v11.0.4) (2023-05-16)
+
+
+### 🐛 Bug Fixes
+
+* correct npm publishing changes ([99c8c87](https://github.com/0-vortex/release/commit/99c8c87e173667175b82dc7c483ae05625d96928))
+
 ## [11.0.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v11.0.2...v11.0.3) (2023-05-16)
 
 
