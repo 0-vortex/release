@@ -1,6 +1,6 @@
-name: 'open-sauced-semantic-config-test'
+name: 'release'
 author: '0-vortex'
-description: 'Run @open-sauced/semantic-release-conventional-config on a repo'
+description: 'Run 0-vortex/release on a repo'
 outputs:
   release-tag:
     description: 'The tag that was released on success'
@@ -11,5 +11,5 @@ branding:
   color: 'yellow'
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/0-vortex/open-sauced-semantic-config-test:11.0.2'
+  image: 'docker://ghcr.io/0-vortex/release:11.0.2'
 
