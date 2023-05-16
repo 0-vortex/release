@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [11.0.2](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v11.0.1...v11.0.2) (2023-05-16)
+
+
+### ✅ Tests
+
+* attempt to bump latest github actions tag with script ([b3c281a](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/b3c281acc846db212262918692c80bfbcab612f8))
+
 ## [11.0.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v11.0.0...v11.0.1) (2023-05-16)
 
 
