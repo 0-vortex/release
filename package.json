@@ -3,9 +3,9 @@
   "version": "10.1.0",
   "license": "MIT",
   "files": [
-    "release.config.js"
+    "release.config.cjs"
   ],
-  "main": "release.config.js",
+  "main": "release.config.cjs",
   "author": "TED Vortex <ted.vortex@gmail.com>",
   "engines": {
     "node": ">=18",
@@ -17,7 +17,7 @@
     "url": "git+ssh://git@github.com/0-vortex/open-sauced-semantic-config-test.git"
   },
   "peerDependencies": {
-    "semantic-release": ">=19.0.0"
+    "semantic-release": ">=21.0.0"
   },
   "dependencies": {
     "@google/semantic-release-replace-plugin": "^1.2.0",
