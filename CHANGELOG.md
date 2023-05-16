@@ -1,3 +1,17 @@
+# 📦 0-vortex/release changelog
+
+[![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
+
+> All notable changes to this project will be documented in this file
+
+## [11.0.3](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v11.0.2...v11.0.3) (2023-05-16)
+
+
+### 🧑‍💻 Code Refactoring
+
+* rename action to diverge upstream ([9fc2d35](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/9fc2d356f7a0a4f8d1fc2a498dae8a81684b8464))
+
 # 📦 0-vortex/open-sauced-semantic-config-test changelog
 
 [![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
