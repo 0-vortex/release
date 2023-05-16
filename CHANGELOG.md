@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [11.0.7](https://github.com/0-vortex/release/compare/v11.0.6...v11.0.7) (2023-05-16)
+
+
+### 🐛 Bug Fixes
+
+* correct testing build command ([523ecb6](https://github.com/0-vortex/release/commit/523ecb6a37d622802072d5123e6d797cfb68b5cf))
+
 ## [11.0.6](https://github.com/0-vortex/release/compare/v11.0.5...v11.0.6) (2023-05-16)
 
 
