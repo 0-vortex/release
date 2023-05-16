@@ -29,8 +29,8 @@ log.info(`Executing semantic-release config setup`);
 !GIT_COMMITTER_EMAIL && (process.env.GIT_COMMITTER_EMAIL = "63161813+open-sauced[bot]@users.noreply.github.com");
 
 try {
-  const { stdout: authorName } = execSync(`git log -1 --pretty=format:%an ${GITHUB_SHA}`);
-  const { stdout: authorEmail } = execSync(`git log -1 --pretty=format:%ae ${GITHUB_SHA}`);
+  const authorName = execSync(`git log -1 --pretty=format:%an ${GITHUB_SHA}`, { encoding: "utf8", stdio: "pipe" });
+  const authorEmail = execSync(`git log -1 --pretty=format:%ae ${GITHUB_SHA}`, { encoding: "utf8", stdio: "pipe" });
   authorName && !GIT_AUTHOR_NAME && (process.env.GIT_AUTHOR_NAME = `${authorName}`);
   authorEmail && !GIT_AUTHOR_EMAIL && (process.env.GIT_AUTHOR_EMAIL = `${authorEmail}`);
 } catch (e) {
