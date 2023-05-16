@@ -1,6 +1,5 @@
-const { existsSync } = require("fs");
-const { sync, commandSync } = require("execa");
-const { resolve } = require("path");
+const { existsSync } = require("node:fs");
+const { execSync } = require('node:child_process');
 const log = require("npmlog");
 
 const plugins = [];
@@ -18,10 +17,10 @@ const {
   GIT_AUTHOR_EMAIL,
 } = process.env;
 const successCmd = `
-echo 'RELEASE_TAG=v\${nextRelease.version}' >> "$GITHUB_ENV"
-echo 'RELEASE_VERSION=\${nextRelease.version}' >> "$GITHUB_ENV"
-echo 'release-tag=v\${nextRelease.version}' >> "$GITHUB_OUTPUT"
-echo 'release-version=\${nextRelease.version}' >> "$GITHUB_OUTPUT"
+echo 'RELEASE_TAG=v\${nextRelease.version}' >> $GITHUB_ENV
+echo 'RELEASE_VERSION=\${nextRelease.version}' >> $GITHUB_ENV
+echo '::set-output name=release-tag::v\${nextRelease.version}'
+echo '::set-output name=release-version::\${nextRelease.version}'
 `;
 const [owner, repo] = String(GITHUB_REPOSITORY).toLowerCase().split("/");
 const addPlugin = (plugin, options) => {
@@ -36,8 +35,8 @@ log.info(`Executing semantic-release config setup`);
 !GIT_COMMITTER_EMAIL && (process.env.GIT_COMMITTER_EMAIL = "63161813+open-sauced[bot]@users.noreply.github.com");
 
 try {
-  const { stdout: authorName } = sync("git", ["log", "-1", "--pretty=format:%an", GITHUB_SHA]);
-  const { stdout: authorEmail } = sync("git", ["log", "-1", "--pretty=format:%ae", GITHUB_SHA]);
+  const { stdout: authorName } = execSync(`git log -1 --pretty=format:%an ${GITHUB_SHA}`);
+  const { stdout: authorEmail } = execSync(`git log -1 --pretty=format:%ae ${GITHUB_SHA}`);
   authorName && !GIT_AUTHOR_NAME && (process.env.GIT_AUTHOR_NAME = `${authorName}`);
   authorEmail && !GIT_AUTHOR_EMAIL && (process.env.GIT_AUTHOR_EMAIL = `${authorEmail}`);
 } catch (e) {
@@ -121,20 +120,6 @@ if (actionExists) {
       "countMatches": true
     }]
   });
-}
-
-try {
-  const {stdout} = commandSync("ls -A1 LICENSE*", {
-    shell: true,
-  });
-
-  addPlugin("semantic-release-license", {
-    license: {
-      path: resolve(stdout)
-    }
-  });
-} catch (e) {
-  log.error(`Unable to run detect license command`, e);
 }
 
 addPlugin("@semantic-release/git", {
