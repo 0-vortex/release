@@ -1,5 +1,5 @@
 {
-  "name": "release",
+  "name": "open-sauced-semantic-config-test",
   "version": "11.0.3",
   "license": "MIT",
   "files": [
@@ -11,10 +11,10 @@
     "node": ">=18",
     "npm": ">=8"
   },
-  "bugs": "https://github.com/0-vortex/open-sauced-semantic-config-test/issues",
+  "bugs": "https://github.com/0-vortex/release/issues",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/0-vortex/open-sauced-semantic-config-test.git"
+    "url": "git+ssh://git@github.com/0-vortex/release.git"
   },
   "peerDependencies": {
     "semantic-release": ">=21.0.0"
