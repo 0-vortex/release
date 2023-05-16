@@ -5,6 +5,22 @@
 
 > All notable changes to this project will be documented in this file
 
+## [11.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.2.0...v11.0.0) (2023-05-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* final push towards fixing
+
+### 🤖 Build System
+
+* update all dependencies and run in node16 ([ca19dc2](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/ca19dc20b8c08b71a586325edbc86fb66cefcbb6))
+
+
+### 🍕 Features
+
+* clean up errors and success commands ([d51c747](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/d51c7477e60407796e04749b700bdfe89da38d9e)), closes [/github.blog/2022-04-12-git-security-vulnerability-announced/#cve-2022-24765](https://github.com/0-vortex//github.blog/2022-04-12-git-security-vulnerability-announced//issues/cve-2022-24765)
+
 ## [10.2.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.1.0...v10.2.0) (2023-05-16)
 
 
