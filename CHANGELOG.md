@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [11.0.5](https://github.com/0-vortex/release/compare/v11.0.4...v11.0.5) (2023-05-16)
+
+
+### 🐛 Bug Fixes
+
+* correct new action name and namespaces ([79b6b8d](https://github.com/0-vortex/release/commit/79b6b8d1cf2a1967654b8547ae1c27faac010d41))
+
 ## [11.0.4](https://github.com/0-vortex/release/compare/v11.0.3...v11.0.4) (2023-05-16)
 
 
