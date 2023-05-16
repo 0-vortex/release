@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [11.0.1](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v11.0.0...v11.0.1) (2023-05-16)
+
+
+### 🐛 Bug Fixes
+
+* correct git author mismatch after execa removal ([e5ff93b](https://github.com/0-vortex/open-sauced-semantic-config-test/commit/e5ff93bb89375a1a45ee689442ba6f72cbe1518b))
+
 ## [11.0.0](https://github.com/0-vortex/open-sauced-semantic-config-test/compare/v10.2.0...v11.0.0) (2023-05-16)
 
 
