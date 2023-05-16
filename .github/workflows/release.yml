@@ -103,7 +103,7 @@ jobs:
       - name: "echo outputs"
         run: |
           echo "RELEASE_TAG: ${{ env.RELEASE_TAG }}"
-          echo "RELEASE_URL: ${{ env.RELEASE_URL }}"
+          echo "RELEASE_VERSION: ${{ env.RELEASE_VERSION }}"
           echo "outputs.release-tag: ${{ steps.release.outputs.release-tag }}"
           echo "outputs.release-version: ${{ steps.release.outputs.release-version }}"
 
