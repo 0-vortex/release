@@ -1,4 +1,4 @@
-<div style="text-align: center">
+<div align="center">
   <img src="https://raw.githubusercontent.com/0-vortex/0-vortex/main/static/logo.svg" width="400">
 
 # 0-vortex/release
