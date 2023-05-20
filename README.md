@@ -1,17 +1,15 @@
-<div style="text-align: center" align="center">
-  <img alt="Open Sauced" src="https://i.ibb.co/7jPXt0Z/logo1-92f1a87f.png" width="300px" />
+<div style="text-align: center">
+  <img src="https://raw.githubusercontent.com/0-vortex/0-vortex/main/static/logo.svg" width="400">
 
-# open-sauced-semantic-config-test
+# 0-vortex/release
 
 > [**semantic-release**](https://github.com/semantic-release/semantic-release) shareable config to publish to `npm` and/or `ghcr`.
 
-> now available as a [GitHub Marketplace action](https://github.com/marketplace/actions/open-sauced-semantic-release-conventional-config)
+> now available as a [GitHub Marketplace action](https://github.com/marketplace/actions/0-vortex-release)
 
-[![Commits](https://img.shields.io/github/commit-activity/w/0-vortex/open-sauced-semantic-config-test?style=flat)](https://github.com/open-sauced/semantic-release-conventional-config/pulse)
-[![Issues](https://img.shields.io/github/issues/0-vortex/open-sauced-semantic-config-test.svg?style=flat)](https://github.com/open-sauced/semantic-release-conventional-config/issues)
-[![Releases](https://img.shields.io/github/v/release/0-vortex/open-sauced-semantic-config-test.svg?style=flat)](https://github.com/open-sauced/semantic-release-conventional-config/releases)
-[![Discord](https://img.shields.io/discord/714698561081704529.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/U2peSNf23P)
-[![Twitter](https://img.shields.io/twitter/follow/saucedopen?label=Follow&style=social)](https://twitter.com/saucedopen)
+[![Commits](https://img.shields.io/github/commit-activity/w/0-vortex/release?style=flat)](https://github.com/0-vortex/release/pulse)
+[![Issues](https://img.shields.io/github/issues/0-vortex/release.svg?style=flat)](https://github.com/0-vortex/release/issues)
+[![Releases](https://img.shields.io/github/v/release/0-vortex/release.svg?style=flat)](https://github.com/0-vortex/release/releases)
 
 </div>
 
@@ -25,12 +23,11 @@ This shareable configuration use the following plugins:
 - [`conventional-changelog-conventionalcommits`](https://github.com/conventional-changelog/conventional-changelog)
 - [`@semantic-release/npm`](https://github.com/semantic-release/npm)
 - [`@google/semantic-release-replace-plugin`](https://github.com/google/semantic-release-replace-plugin)
-- [`semantic-release-license`](https://github.com/cbhq/semantic-release-license)
 - [`@semantic-release/git`](https://github.com/semantic-release/git)
 - [`@semantic-release/github`](https://github.com/semantic-release/github)
 - [`@eclass/semantic-release-docker`](https://github.com/eclass/semantic-release-docker)
 - [`@semantic-release/exec`](https://github.com/semantic-release/exec)
-- [`execa`](https://github.com/sindresorhus/execa)
+- [`semantic-release-major-tag`](https://github.com/doteric/semantic-release-major-tag)
 - [`npmlog`](https://github.com/npm/npmlog)
 
 ## 🖥️ Requirements
@@ -82,13 +79,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "☁️ checkout repository"
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
       - name: "🚀 release"
         id: semantic-release
-        uses: docker://ghcr.io/open-sauced/semantic-release-conventional-config:3.0.0
+        uses: docker://ghcr.io/0-vortex/release:11.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -124,13 +121,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "☁️ checkout repository"
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
       - name: "🚀 release"
         id: semantic-release
-        uses: open-sauced/semantic-release-conventional-config@v3
+        uses: 0-vortex/release@v11
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -146,14 +143,14 @@ jobs:
 You can opt to use this package in your local tooling. Proceed as you would normally would, replacing `npm` with your package manager of choice and install the package:
 
 ```bash
-npm install --save-dev open-sauced-semantic-config-test
+npm install --save-dev release
 ```
 
 The shareable config can then be configured in the [**semantic-release** configuration file](https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#configuration):
 
 ```json
 {
-  "extends": "open-sauced-semantic-config-test"
+  "extends": "release"
 }
 ```
 
@@ -204,15 +201,11 @@ We are actively investigating ways to drop the 2 remaining variables as well!
 
 ## 🤝 Contributing
 
-We encourage you to contribute to Open Sauced! Please check out the [Contributing guide](https://docs.opensauced.pizza/contributing/introduction-to-contributing/) for guidelines about how to proceed.
-
 If you decide to fix a bug, make sure to use the conventional commit available at:
 
 ```shell
 npm run push
 ```
-
-<img align="right" src="https://i.ibb.co/CJfW18H/ship.gif" width="200"/>
 
 ## 🍕 Community
 
@@ -221,4 +214,4 @@ Find Open Sauced videos and release overviews on our [YouTube Channel](https://w
 
 ## ⚖️ LICENSE
 
-MIT © [Open Sauced](LICENSE)
+MIT © [TED (Teodor-Eugen Dutulescu) Vortex](./LICENSE)
