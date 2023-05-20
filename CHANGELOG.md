@@ -5,6 +5,18 @@
 
 > All notable changes to this project will be documented in this file
 
+## [11.1.0](https://github.com/0-vortex/release/compare/v11.0.7...v11.1.0) (2023-05-20)
+
+
+### 📝 Documentation
+
+* adjust readme for personal account and add new splash logo ([120f73a](https://github.com/0-vortex/release/commit/120f73aa8514d92c3847bcd682bbf14cd2578901))
+
+
+### 🐛 Bug Fixes
+
+* correct readme html text alignment ([b658493](https://github.com/0-vortex/release/commit/b6584931dbd242f9bbd99c4a1735fbb5bf1a46df))
+
 ## [11.0.7](https://github.com/0-vortex/release/compare/v11.0.6...v11.0.7) (2023-05-16)
 
 
